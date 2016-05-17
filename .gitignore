@@ -55,6 +55,7 @@ coverage.xml
 *.log
 local_settings.py
 *.db
+*movie_posters*
 
 # Scrapy stuff:
 .scrapy
