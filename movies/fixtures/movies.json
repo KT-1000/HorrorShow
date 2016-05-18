@@ -1,1 +1,952 @@
-[{'pk': u'tt4786282', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4786282\n', 'plot': u'A woman is haunted by a creature that only appears when the lights go out.', 'rated': u'PG-13', 'language': u'N/A', 'title': u'Lights Out', 'country': u'USA', 'release_date': u'22 Jul 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTg1OTkxNDgyMV5BMl5BanBnXkFtZTgwMjEzNTc0ODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4786282', 'year': u'2016', 'genre': u'Horror', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BMTg1OTkxNDgyMV5BMl5BanBnXkFtZTgwMjEzNTc0ODE@._V1_SX300.jpg'}}, {'pk': u'tt4160708', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4160708\n', 'plot': u"A group of friends break into the house of a wealthy blind man, thinking they'll get away with the perfect heist. They're wrong.", 'rated': u'N/A', 'language': u'N/A', 'title': u"Don't Breathe", 'country': u'USA', 'release_date': u'26 Aug 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BNjE0ODYzMzc3M15BMl5BanBnXkFtZTgwNDM2MjYzODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4160708', 'year': u'2016', 'genre': u'Horror, Thriller', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BNjE0ODYzMzc3M15BMl5BanBnXkFtZTgwNDM2MjYzODE@._V1_SX300.jpg'}}, {'pk': u'tt3235888', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3235888\n', 'plot': u'A young woman is followed by an unknown supernatural force after a sexual encounter.', 'rated': u'R', 'language': u'English', 'title': u'It Follows', 'country': u'USA', 'release_date': u'27 Mar 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTUwMDEzNDI1MF5BMl5BanBnXkFtZTgwNzAyODU5MzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3235888', 'year': u'2014', 'genre': u'Fantasy, Horror, Mystery', 'runtime': u'100 min', 'poster_loc': u'../static/movie_posters/MV5BMTUwMDEzNDI1MF5BMl5BanBnXkFtZTgwNzAyODU5MzE@._V1_SX300.jpg'}}, {'pk': u'tt5022702', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt5022702\n', 'plot': u'A deaf writer who retreated into the woods to live a solitary life must fight for her life in silence when a masked killer appears at her window.', 'rated': u'R', 'language': u'English, American Sign Language', 'title': u'Hush', 'country': u'USA', 'release_date': u'08 Apr 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt5022702', 'year': u'2016', 'genre': u'Horror, Thriller', 'runtime': u'81 min', 'poster_loc': u'../static/movie_posters/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_SX300.jpg'}}, {'pk': u'tt0090605', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0090605\n', 'plot': u'The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?', 'rated': u'R', 'language': u'English', 'title': u'Aliens', 'country': u'UK, USA', 'release_date': u'18 Jul 1986', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTYzNzU5MzQ4OV5BMl5BanBnXkFtZTcwMDcxNDg3OA@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0090605', 'year': u'1986', 'genre': u'Action, Horror, Sci-Fi', 'runtime': u'137 min', 'poster_loc': u'../static/movie_posters/MV5BMTYzNzU5MzQ4OV5BMl5BanBnXkFtZTcwMDcxNDg3OA@@._V1_SX300.jpg'}}, {'pk': u'tt3278330', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3278330\n', 'plot': u"The film serves as Garrone's English-language debut and will interweave three separate story strands bookended by brief bits in which Italians Alba Rohrwacher and Massimo Ceccherini will ...", 'rated': u'N/A', 'language': u'English, Russian', 'title': u'Tale of Tales', 'country': u'UK, France, Italy', 'release_date': u'22 Apr 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTg0ODQ2NDE1N15BMl5BanBnXkFtZTgwNzAyNzA1ODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3278330', 'year': u'2015', 'genre': u'Fantasy, Horror, Romance', 'runtime': u'125 min', 'poster_loc': u'../static/movie_posters/MV5BMTg0ODQ2NDE1N15BMl5BanBnXkFtZTgwNzAyNzA1ODE@._V1_SX300.jpg'}}, {'pk': u'tt1060277', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1060277\n', 'plot': u'A group of friends venture deep into the streets of New York on a rescue mission during a rampaging monster attack.', 'rated': u'PG-13', 'language': u'English, Russian', 'title': u'Cloverfield', 'country': u'USA', 'release_date': u'18 Jan 2008', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTQ1NzU4NjI5Nl5BMl5BanBnXkFtZTcwNTkyMjc1MQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1060277', 'year': u'2008', 'genre': u'Action, Adventure, Horror', 'runtime': u'85 min', 'poster_loc': u'../static/movie_posters/MV5BMTQ1NzU4NjI5Nl5BMl5BanBnXkFtZTcwNTkyMjc1MQ@@._V1_SX300.jpg'}}, {'pk': u'tt0070917', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0070917\n', 'plot': u'A police sergeant is sent to a Scottish island village in search of a missing girl whom the townsfolk claim never existed. Stranger still are the rites that take place there.', 'rated': u'R', 'language': u'English', 'title': u'The Wicker Man', 'country': u'UK', 'release_date': u'01 Jun 1975', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjE0Mzk1NzQ2OF5BMl5BanBnXkFtZTgwMTkzNTE0NjE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0070917', 'year': u'1973', 'genre': u'Horror, Mystery', 'runtime': u'88 min', 'poster_loc': u'../static/movie_posters/MV5BMjE0Mzk1NzQ2OF5BMl5BanBnXkFtZTgwMTkzNTE0NjE@._V1_SX300.jpg'}}, {'pk': u'tt3065204', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3065204\n', 'plot': u'Lorraine and Ed Warren travel to north London to help a single mother raising four children alone in a house plagued by malicious spirits.', 'rated': u'N/A', 'language': u'English', 'title': u'The Conjuring 2', 'country': u'USA', 'release_date': u'10 Jun 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BYmY1OWFjNWUtMTc3YS00ZTM3LTk0MDYtNzBhOTEwYzBmMTlmXkEyXkFqcGdeQXVyNjQ4NTMyMTg@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3065204', 'year': u'2016', 'genre': u'Horror', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BYmY1OWFjNWUtMTc3YS00ZTM3LTk0MDYtNzBhOTEwYzBmMTlmXkEyXkFqcGdeQXVyNjQ4NTMyMTg@._V1_SX300.jpg'}}, {'pk': u'tt0829150', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0829150\n', 'plot': u'As his kingdom is being threatened by the Turks, young prince Vlad Tepes must become a monster feared by his own people in order to obtain the power needed to protect his own family, and the families of his kingdom.', 'rated': u'PG-13', 'language': u'English, Turkish', 'title': u'Dracula Untold', 'country': u'USA, Japan', 'release_date': u'10 Oct 2014', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTkzNzI1OTI4N15BMl5BanBnXkFtZTgwNTQ2NzEwMjE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0829150', 'year': u'2014', 'genre': u'Action, Drama, Fantasy', 'runtime': u'92 min', 'poster_loc': u'../static/movie_posters/MV5BMTkzNzI1OTI4N15BMl5BanBnXkFtZTgwNTQ2NzEwMjE@._V1_SX300.jpg'}}, {'pk': u'tt0238546', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0238546\n', 'plot': u'The vampire Lestat becomes a rock star whose music wakes up the queen of all vampires.', 'rated': u'R', 'language': u'English', 'title': u'Queen of the Damned', 'country': u'USA, Australia', 'release_date': u'22 Feb 2002', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTYxNDEyMzEzMV5BMl5BanBnXkFtZTYwMDM1NjA3._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0238546', 'year': u'2002', 'genre': u'Drama, Fantasy, Horror', 'runtime': u'101 min', 'poster_loc': u'../static/movie_posters/MV5BMTYxNDEyMzEzMV5BMl5BanBnXkFtZTYwMDM1NjA3._V1_SX300.jpg'}}, {'pk': u'tt4094724', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4094724\n', 'plot': u'Two years after choosing not to kill the man who killed his son, former police sergeant Barnes has become head of security for Senator Charlene Roan, the front runner in the next Presidential election due to her vow to eliminate the Purge.', 'rated': u'N/A', 'language': u'English', 'title': u'The Purge: Election Year', 'country': u'USA, France', 'release_date': u'01 Jul 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTQ1OTI0OTY2OV5BMl5BanBnXkFtZTgwODMzNDg5NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4094724', 'year': u'2016', 'genre': u'Action, Horror, Sci-Fi', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BMTQ1OTI0OTY2OV5BMl5BanBnXkFtZTgwODMzNDg5NzE@._V1_SX300.jpg'}}, {'pk': u'tt1156398', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1156398\n', 'plot': u'A shy student trying to reach his family in Ohio, a gun-toting tough guy trying to find the last Twinkie, and a pair of sisters trying to get to an amusement park join forces to travel across a zombie-filled America.', 'rated': u'R', 'language': u'English', 'title': u'Zombieland', 'country': u'USA', 'release_date': u'02 Oct 2009', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1156398', 'year': u'2009', 'genre': u'Adventure, Comedy, Horror', 'runtime': u'88 min', 'poster_loc': u'../static/movie_posters/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_SX300.jpg'}}, {'pk': u'tt1051904', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1051904\n', 'plot': u"A teenager teams up with the daughter of young adult horror author R. L. Stine after the writer's imaginary demons are set free on the town of Madison, Delaware.", 'rated': u'PG', 'language': u'English', 'title': u'Goosebumps', 'country': u'USA, Australia', 'release_date': u'16 Oct 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjA1OTUzNTQ5Ml5BMl5BanBnXkFtZTgwODQ4NDkxNjE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1051904', 'year': u'2015', 'genre': u'Adventure, Comedy, Family', 'runtime': u'103 min', 'poster_loc': u'../static/movie_posters/MV5BMjA1OTUzNTQ5Ml5BMl5BanBnXkFtZTgwODQ4NDkxNjE@._V1_SX300.jpg'}}, {'pk': u'tt1974419', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1974419\n', 'plot': u'When aspiring model Jesse moves to Los Angeles, her youth and vitality are devoured by a group of beauty-obsessed women who will take any means necessary to get what she has.', 'rated': u'N/A', 'language': u'English', 'title': u'The Neon Demon', 'country': u'France, USA, Denmark', 'release_date': u'24 Jun 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTcyMjcxNTc3M15BMl5BanBnXkFtZTgwMTcxNTM4ODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1974419', 'year': u'2016', 'genre': u'Horror, Thriller', 'runtime': u'110 min', 'poster_loc': u'../static/movie_posters/MV5BMTcyMjcxNTc3M15BMl5BanBnXkFtZTgwMTcxNTM4ODE@._V1_SX300.jpg'}}, {'pk': u'tt1457767', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1457767\n', 'plot': u'Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.', 'rated': u'R', 'language': u'English, Latin', 'title': u'The Conjuring', 'country': u'USA', 'release_date': u'19 Jul 2013', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1457767', 'year': u'2013', 'genre': u'Horror', 'runtime': u'112 min', 'poster_loc': u'../static/movie_posters/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg'}}, {'pk': u'tt0775440', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0775440\n', 'plot': u'When a mysterious cell phone signal causes apocalyptic chaos, an artist is determined to reunite with his young son in New England.', 'rated': u'R', 'language': u'English', 'title': u'Cell', 'country': u'USA', 'release_date': u'08 Jul 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTEzNTQ2OTYxMjheQTJeQWpwZ15BbWU4MDc0OTkzNzgx._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0775440', 'year': u'2016', 'genre': u'Horror, Sci-Fi, Thriller', 'runtime': u'98 min', 'poster_loc': u'../static/movie_posters/MV5BMTEzNTQ2OTYxMjheQTJeQWpwZ15BbWU4MDc0OTkzNzgx._V1_SX300.jpg'}}, {'pk': u'tt3717252', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3717252\n', 'plot': u'The plot is unknown at this time.', 'rated': u'N/A', 'language': u'English', 'title': u'Underworld: Blood Wars', 'country': u'USA', 'release_date': u'14 Oct 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTU2NzE3NTk2NF5BMl5BanBnXkFtZTgwNjk0NzA2ODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3717252', 'year': u'2016', 'genre': u'Action, Horror', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BMTU2NzE3NTk2NF5BMl5BanBnXkFtZTgwNjk0NzA2ODE@._V1_SX300.jpg'}}, {'pk': u'tt3838992', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3838992\n', 'plot': u'Two teenage yoga enthusiasts team up with a legendary man-hunter to battle with an ancient evil presence that is threatening their major party plans.', 'rated': u'R', 'language': u'English, German, French', 'title': u'Yoga Hosers', 'country': u'USA', 'release_date': u'29 Jul 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTQ4NjI5ODM5NF5BMl5BanBnXkFtZTgwNjY2MjU2NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3838992', 'year': u'2016', 'genre': u'Comedy, Fantasy, Horror', 'runtime': u'88 min', 'poster_loc': u'../static/movie_posters/MV5BMTQ4NjI5ODM5NF5BMl5BanBnXkFtZTgwNjY2MjU2NzE@._V1_SX300.jpg'}}, {'pk': u'tt2403021', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt2403021\n', 'plot': u'A group of student activists travels to the Amazon to save the rain forest and soon discover that they are not alone, and that no good deed goes unpunished.', 'rated': u'R', 'language': u'English', 'title': u'The Green Inferno', 'country': u'USA, Chile, Canada', 'release_date': u'25 Sep 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTE0MjgzMjk5MzdeQTJeQWpwZ15BbWU4MDM5OTM1MTYx._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt2403021', 'year': u'2013', 'genre': u'Adventure, Horror', 'runtime': u'100 min', 'poster_loc': u'../static/movie_posters/MV5BMTE0MjgzMjk5MzdeQTJeQWpwZ15BbWU4MDM5OTM1MTYx._V1_SX300.jpg'}}, {'pk': u'tt0816711', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0816711\n', 'plot': u'Former United Nations employee Gerry Lane traverses the world in a race against time to stop the Zombie pandemic that is toppling armies and governments, and threatening to destroy humanity itself.', 'rated': u'PG-13', 'language': u'English, Spanish, Hebrew, Arabic', 'title': u'World War Z', 'country': u'USA, Malta', 'release_date': u'21 Jun 2013', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTg0NTgxMjIxOF5BMl5BanBnXkFtZTcwMDM0MDY1OQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0816711', 'year': u'2013', 'genre': u'Action, Adventure, Horror', 'runtime': u'116 min', 'poster_loc': u'../static/movie_posters/MV5BMTg0NTgxMjIxOF5BMl5BanBnXkFtZTcwMDM0MDY1OQ@@._V1_SX300.jpg'}}, {'pk': u'tt0078748', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0078748\n', 'plot': u'After a space merchant vessel perceives an unknown transmission as distress call, their landing on the source planet finds one of the crew attacked by a mysterious lifeform. Continuing their journey back to Earth with the attacked crew having recovered and the critter deceased, they soon realize that its life cycle has merely begun.', 'rated': u'R', 'language': u'English, Spanish', 'title': u'Alien', 'country': u'USA, UK', 'release_date': u'22 Jun 1979', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTU1ODQ4NjQyOV5BMl5BanBnXkFtZTgwOTQ3NDU2MTE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0078748', 'year': u'1979', 'genre': u'Horror, Sci-Fi', 'runtime': u'117 min', 'poster_loc': u'../static/movie_posters/MV5BMTU1ODQ4NjQyOV5BMl5BanBnXkFtZTgwOTQ3NDU2MTE@._V1_SX300.jpg'}}, {'pk': u'tt4503598', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4503598\n', 'plot': u"A couple's replacement babysitter turns out to be more than they bargined for when she subjects their kids to a series of twisted activities.", 'rated': u'N/A', 'language': u'English', 'title': u'Emelie', 'country': u'USA', 'release_date': u'04 Mar 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BNDA4OTIzNDI2N15BMl5BanBnXkFtZTgwNTc4MzYwODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4503598', 'year': u'2015', 'genre': u'Horror, Thriller', 'runtime': u'80 min', 'poster_loc': u'../static/movie_posters/MV5BNDA4OTIzNDI2N15BMl5BanBnXkFtZTgwNTc4MzYwODE@._V1_SX300.jpg'}}, {'pk': u'tt0070047', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0070047\n', 'plot': u'When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.', 'rated': u'R', 'language': u'German, Arabic, Latin, Greek, English, French', 'title': u'The Exorcist', 'country': u'USA', 'release_date': u'26 Dec 1973', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTgxMjIyNTc5Nl5BMl5BanBnXkFtZTgwMjgwNDgwNzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0070047', 'year': u'1973', 'genre': u'Horror', 'runtime': u'122 min', 'poster_loc': u'../static/movie_posters/MV5BMTgxMjIyNTc5Nl5BMl5BanBnXkFtZTgwMjgwNDgwNzE@._V1_SX300.jpg'}}, {'pk': u'tt1374989', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1374989\n', 'plot': u'Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies.', 'rated': u'PG-13', 'language': u'English', 'title': u'Pride and Prejudice and Zombies', 'country': u'USA, UK', 'release_date': u'05 Feb 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjE1MzA3NzYxMl5BMl5BanBnXkFtZTgwMzQ0NDA5NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1374989', 'year': u'2016', 'genre': u'Action, Horror, Romance', 'runtime': u'107 min', 'poster_loc': u'../static/movie_posters/MV5BMjE1MzA3NzYxMl5BMl5BanBnXkFtZTgwMzQ0NDA5NzE@._V1_SX300.jpg'}}, {'pk': u'tt4264426', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4264426\n', 'plot': u'While on her bachelorette party getaway, Casey, the bride to be, gets a seemingly harmless bite from an unknown insect. After returning home with cold feet, Casey tries to call off her ...', 'rated': u'NOT RATED', 'language': u'English', 'title': u'Bite', 'country': u'Canada', 'release_date': u'06 May 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjMyMjM2OTUwMV5BMl5BanBnXkFtZTgwNjExNjM4NjE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4264426', 'year': u'2015', 'genre': u'Horror', 'runtime': u'90 min', 'poster_loc': u'../static/movie_posters/MV5BMjMyMjM2OTUwMV5BMl5BanBnXkFtZTgwNjExNjM4NjE@._V1_SX300.jpg'}}, {'pk': u'tt0115963', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0115963\n', 'plot': u'A newcomer to a Catholic prep high school falls in with a trio of outcast teenage girls who practice witchcraft and they all soon conjure up various spells and curses against those who even slightly anger them.', 'rated': u'R', 'language': u'English, French', 'title': u'The Craft', 'country': u'USA', 'release_date': u'03 May 1996', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTIwNTQyNTY1OF5BMl5BanBnXkFtZTYwNTYwNjg4._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0115963', 'year': u'1996', 'genre': u'Drama, Fantasy, Horror', 'runtime': u'101 min', 'poster_loc': u'../static/movie_posters/MV5BMTIwNTQyNTY1OF5BMl5BanBnXkFtZTYwNTYwNjg4._V1_SX300.jpg'}}, {'pk': u'tt4263482', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4263482\n', 'plot': u'A family in 1630s New England is torn apart by the forces of witchcraft, black magic and possession.', 'rated': u'R', 'language': u'English', 'title': u'The Witch', 'country': u'USA, UK, Canada, Brazil', 'release_date': u'19 Feb 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTY4MTU2NjMyNV5BMl5BanBnXkFtZTgwMzUwMDk4NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4263482', 'year': u'2015', 'genre': u'Horror, Mystery', 'runtime': u'92 min', 'poster_loc': u'../static/movie_posters/MV5BMTY4MTU2NjMyNV5BMl5BanBnXkFtZTgwMzUwMDk4NzE@._V1_SX300.jpg'}}, {'pk': u'tt1467304', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1467304\n', 'plot': u"A mad scientist kidnaps and mutilates a trio of tourists in order to reassemble them into a human centipede, created by stitching their mouths to each others' rectums.", 'rated': u'R', 'language': u'English, German, Japanese', 'title': u'The Human Centipede (First Sequence)', 'country': u'Netherlands', 'release_date': u'28 Apr 2010', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1467304', 'year': u'2009', 'genre': u'Horror', 'runtime': u'92 min', 'poster_loc': u'../static/movie_posters/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg'}}, {'pk': u'tt2554274', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt2554274\n', 'plot': u'In the aftermath of a family tragedy, an aspiring author is torn between love for her childhood friend and the temptation of a mysterious outsider. Trying to escape the ghosts of her past, she is swept away to a house that breathes, bleeds - and remembers.', 'rated': u'R', 'language': u'English', 'title': u'Crimson Peak', 'country': u'USA, Canada', 'release_date': u'16 Oct 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BNTY2OTI5MjAyOV5BMl5BanBnXkFtZTgwNTkzMjQ0NDE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt2554274', 'year': u'2015', 'genre': u'Drama, Fantasy, Horror', 'runtime': u'119 min', 'poster_loc': u'../static/movie_posters/MV5BNTY2OTI5MjAyOV5BMl5BanBnXkFtZTgwNTkzMjQ0NDE@._V1_SX300.jpg'}}, {'pk': u'tt0081505', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0081505\n', 'plot': u'A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.', 'rated': u'R', 'language': u'English', 'title': u'The Shining', 'country': u'USA, UK', 'release_date': u'23 May 1980', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BODMxMjE3NTA4Ml5BMl5BanBnXkFtZTgwNDc0NTIxMDE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0081505', 'year': u'1980', 'genre': u'Drama, Horror', 'runtime': u'146 min', 'poster_loc': u'../static/movie_posters/MV5BODMxMjE3NTA4Ml5BMl5BanBnXkFtZTgwNDc0NTIxMDE@._V1_SX300.jpg'}}, {'pk': u'tt0054215', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0054215\n', 'plot': u"A Phoenix secretary steals $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.", 'rated': u'R', 'language': u'English', 'title': u'Psycho', 'country': u'USA', 'release_date': u'08 Sep 1960', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTgzMzM3NDY0NF5BMl5BanBnXkFtZTgwNDgwNDgwNzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0054215', 'year': u'1960', 'genre': u'Horror, Mystery, Thriller', 'runtime': u'109 min', 'poster_loc': u'../static/movie_posters/MV5BMTgzMzM3NDY0NF5BMl5BanBnXkFtZTgwNDgwNDgwNzE@._V1_SX300.jpg'}}, {'pk': u'tt3387542', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3387542\n', 'plot': u"A woman goes into Japan's Suicide Forest to find her twin sister, and confronts supernatural terror.", 'rated': u'PG-13', 'language': u'English', 'title': u'The Forest', 'country': u'USA', 'release_date': u'08 Jan 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjAwMzQzNTc5OV5BMl5BanBnXkFtZTgwNDgyMTU2NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3387542', 'year': u'2016', 'genre': u'Horror, Mystery, Thriller', 'runtime': u'93 min', 'poster_loc': u'../static/movie_posters/MV5BMjAwMzQzNTc5OV5BMl5BanBnXkFtZTgwNDgyMTU2NzE@._V1_SX300.jpg'}}, {'pk': u'tt1881002', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1881002\n', 'plot': u'A teenage girl in the Midwest becomes infected by an outbreak of a disease that slowly turns the infected into cannibalistic zombies. During her transformation, her loving father stays by her side.', 'rated': u'PG-13', 'language': u'English', 'title': u'Maggie', 'country': u'USA, Switzerland', 'release_date': u'08 May 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTkyNzk0MTU2Ml5BMl5BanBnXkFtZTgwNDExNzMyNTE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1881002', 'year': u'2015', 'genre': u'Drama, Horror', 'runtime': u'95 min', 'poster_loc': u'../static/movie_posters/MV5BMTkyNzk0MTU2Ml5BMl5BanBnXkFtZTgwNDExNzMyNTE@._V1_SX300.jpg'}}, {'pk': u'tt0075809', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0075809\n', 'plot': u'A mysterious black, sleek automobile terrorizes everyone it comes into contact with in a small town in Utah. The local sheriff may be the only person who can stop this menace which has been possessed by pure evil.', 'rated': u'PG', 'language': u'English', 'title': u'The Car', 'country': u'USA', 'release_date': u'13 May 1977', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTYxMDAxNjk2MV5BMl5BanBnXkFtZTcwMjM1MzgxMQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0075809', 'year': u'1977', 'genre': u'Action, Horror, Mystery', 'runtime': u'96 min', 'poster_loc': u'../static/movie_posters/MV5BMTYxMDAxNjk2MV5BMl5BanBnXkFtZTcwMjM1MzgxMQ@@._V1_SX300.jpg'}}, {'pk': u'tt3850590', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3850590\n', 'plot': u'A boy who has a bad Christmas ends up accidentally summoning a Christmas demon to his family home.', 'rated': u'PG-13', 'language': u'English', 'title': u'Krampus', 'country': u'USA, New Zealand', 'release_date': u'04 Dec 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjk0MjMzMTI3NV5BMl5BanBnXkFtZTgwODEyODkxNzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3850590', 'year': u'2015', 'genre': u'Comedy, Fantasy, Horror', 'runtime': u'98 min', 'poster_loc': u'../static/movie_posters/MV5BMjk0MjMzMTI3NV5BMl5BanBnXkFtZTgwODEyODkxNzE@._V1_SX300.jpg'}}, {'pk': u'tt1648190', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1648190\n', 'plot': u'Gunslinger Roland Deschain roams an Old West-like landscape in search of the dark tower, in the hopes that reaching it will preserve his dying world.', 'rated': u'N/A', 'language': u'English', 'title': u'The Dark Tower', 'country': u'USA', 'release_date': u'17 Feb 2017', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTQ0ODEyNzE5M15BMl5BanBnXkFtZTgwNDQyMjYyNTE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1648190', 'year': u'2017', 'genre': u'Fantasy, Horror, Sci-Fi', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BMTQ0ODEyNzE5M15BMl5BanBnXkFtZTgwNDQyMjYyNTE@._V1_SX300.jpg'}}, {'pk': u'tt3567288', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3567288\n', 'plot': u"Two siblings become increasingly frightened by their grandparents' disturbing behavior while visiting them on vacation.", 'rated': u'PG-13', 'language': u'English', 'title': u'The Visit', 'country': u'USA', 'release_date': u'11 Sep 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3567288', 'year': u'2015', 'genre': u'Horror, Thriller', 'runtime': u'94 min', 'poster_loc': u'../static/movie_posters/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg'}}, {'pk': u'tt3882082', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3882082\n', 'plot': u"An American nanny is shocked that her new English family's boy is actually a life-sized doll. After she violates a list of strict rules, disturbing events make her believe that the doll is really alive.", 'rated': u'PG-13', 'language': u'English', 'title': u'The Boy', 'country': u'USA, China, Canada', 'release_date': u'22 Jan 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3882082', 'year': u'2016', 'genre': u'Horror, Mystery, Thriller', 'runtime': u'97 min', 'poster_loc': u'../static/movie_posters/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg'}}, {'pk': u'tt3835080', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3835080\n', 'plot': u'Five carnival workers are kidnapped and held hostage in an abandoned, Hell-like compound where they are forced to participate in a violent game, the goal of which is to survive twelve hours against a gang of sadistic clowns.', 'rated': u'R', 'language': u'English', 'title': u'31', 'country': u'USA, UK', 'release_date': u'16 Sep 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTc2OTk2ODEyMl5BMl5BanBnXkFtZTgwNzcyNDY2NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3835080', 'year': u'2016', 'genre': u'Horror, Thriller', 'runtime': u'102 min', 'poster_loc': u'../static/movie_posters/MV5BMTc2OTk2ODEyMl5BMl5BanBnXkFtZTgwNzcyNDY2NzE@._V1_SX300.jpg'}}, {'pk': u'tt4062536', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt4062536\n', 'plot': u'After witnessing a murder, a punk rock band is forced into a vicious fight for survival against a group of maniacal skinheads.', 'rated': u'R', 'language': u'English', 'title': u'Green Room', 'country': u'USA', 'release_date': u'29 Apr 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjU1ODQ5NzA0N15BMl5BanBnXkFtZTgwMDg5MTA5NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt4062536', 'year': u'2015', 'genre': u'Crime, Horror, Thriller', 'runtime': u'95 min', 'poster_loc': u'../static/movie_posters/MV5BMjU1ODQ5NzA0N15BMl5BanBnXkFtZTgwMDg5MTA5NzE@._V1_SX300.jpg'}}, {'pk': u'tt3547682', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3547682\n', 'plot': u'A family of four is quarantined in their home as a virulent strand of the flu spreads into town and they are forced to the extreme to escape alive.', 'rated': u'N/A', 'language': u'Danish', 'title': u'What We Become', 'country': u'Denmark', 'release_date': u'31 Mar 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BNTRmZjZhNTMtMTllMC00ZmRjLWJlZTEtZjFhZWIxYzQ1ZjNlXkEyXkFqcGdeQXVyMjIzMDczOTA@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3547682', 'year': u'2015', 'genre': u'Horror, Thriller', 'runtime': u'85 min', 'poster_loc': u'../static/movie_posters/MV5BNTRmZjZhNTMtMTllMC00ZmRjLWJlZTEtZjFhZWIxYzQ1ZjNlXkEyXkFqcGdeQXVyMjIzMDczOTA@._V1_SX300.jpg'}}, {'pk': u'tt1530509', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1530509\n', 'plot': u'Inspired by the fictional Dr. Heiter, disturbed loner Martin dreams of creating a 12-person centipede and sets out to realize his sick fantasy.', 'rated': u'NOT RATED', 'language': u'English', 'title': u'The Human Centipede II (Full Sequence)', 'country': u'USA', 'release_date': u'01 Nov 2011', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjkwMDI0NjA5OV5BMl5BanBnXkFtZTcwODAxODI4Ng@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1530509', 'year': u'2011', 'genre': u'Crime, Horror', 'runtime': u'91 min', 'poster_loc': u'../static/movie_posters/MV5BMjkwMDI0NjA5OV5BMl5BanBnXkFtZTcwODAxODI4Ng@@._V1_SX300.jpg'}}, {'pk': u'tt3894404', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3894404\n', 'plot': u'When young and successful reporter Jamie finds out that her sister has died in mysterious circumstances, she travels to Singapore to uncover the truth. There, she discovers multiple deaths ...', 'rated': u'N/A', 'language': u'English', 'title': u'The Faith of Anna Waters', 'country': u'Singapore, USA', 'release_date': u'06 May 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjIxMzM1MTQ4NF5BMl5BanBnXkFtZTgwMDY1Njk0ODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3894404', 'year': u'2016', 'genre': u'Drama, Horror, Mystery', 'runtime': u'95 min', 'poster_loc': u'../static/movie_posters/MV5BMjIxMzM1MTQ4NF5BMl5BanBnXkFtZTgwMDY1Njk0ODE@._V1_SX300.jpg'}}, {'pk': u'tt1179933', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1179933\n', 'plot': u'After getting in a car accident, a woman is held in a shelter with two men, who claim the outside world is affected by a widespread chemical attack.', 'rated': u'PG-13', 'language': u'English', 'title': u'10 Cloverfield Lane', 'country': u'USA', 'release_date': u'11 Mar 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjEzMjczOTIxMV5BMl5BanBnXkFtZTgwOTUwMjI3NzE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1179933', 'year': u'2016', 'genre': u'Drama, Horror, Mystery', 'runtime': u'103 min', 'poster_loc': u'../static/movie_posters/MV5BMjEzMjczOTIxMV5BMl5BanBnXkFtZTgwOTUwMjI3NzE@._V1_SX300.jpg'}}, {'pk': u'tt1878841', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1878841\n', 'plot': u'A family returns from a Grand Canyon vacation with a supernatural presence in tow.', 'rated': u'PG-13', 'language': u'English', 'title': u'The Darkness', 'country': u'USA', 'release_date': u'13 May 2016', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMjIxMTg2NjAyMV5BMl5BanBnXkFtZTgwNDE5ODIxODE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1878841', 'year': u'2016', 'genre': u'Horror, Thriller', 'runtime': u'N/A', 'poster_loc': u'../static/movie_posters/MV5BMjIxMTg2NjAyMV5BMl5BanBnXkFtZTgwNDE5ODIxODE@._V1_SX300.jpg'}}, {'pk': u'tt1259521', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1259521\n', 'plot': u'Five friends go for a break at a remote cabin in the woods, where they get more than they bargained for. Together, they must discover the truth behind the cabin in the woods.', 'rated': u'R', 'language': u'English, Japanese', 'title': u'The Cabin in the Woods', 'country': u'USA', 'release_date': u'13 Apr 2012', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1259521', 'year': u'2012', 'genre': u'Fantasy, Horror, Mystery', 'runtime': u'95 min', 'poster_loc': u'../static/movie_posters/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_SX300.jpg'}}, {'pk': u'tt0116367', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt0116367\n', 'plot': u'Two criminals and their hostages unknowingly seek temporary refuge in an establishment populated by vampires, with chaotic results.', 'rated': u'R', 'language': u'English, Spanish', 'title': u'From Dusk Till Dawn', 'country': u'USA', 'release_date': u'19 Jan 1996', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTUzNjI5NTUwOV5BMl5BanBnXkFtZTcwMDAyMDQyMQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt0116367', 'year': u'1996', 'genre': u'Crime, Fantasy, Horror', 'runtime': u'108 min', 'poster_loc': u'../static/movie_posters/MV5BMTUzNjI5NTUwOV5BMl5BanBnXkFtZTcwMDAyMDQyMQ@@._V1_SX300.jpg'}}, {'pk': u'tt3605418', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt3605418\n', 'plot': u'When a devoted husband and father is left home alone for the weekend, two stranded young women unexpectedly knock on his door for help. What starts out as a kind gesture results in a dangerous seduction and a deadly game of cat and mouse.', 'rated': u'R', 'language': u'English, Spanish', 'title': u'Knock Knock', 'country': u'USA, Chile', 'release_date': u'09 Oct 2015', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTY5NTkyMzM1Nl5BMl5BanBnXkFtZTgwODU3Njc2NjE@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt3605418', 'year': u'2015', 'genre': u'Crime, Horror, Thriller', 'runtime': u'99 min', 'poster_loc': u'../static/movie_posters/MV5BMTY5NTkyMzM1Nl5BMl5BanBnXkFtZTgwODU3Njc2NjE@._V1_SX300.jpg'}}, {'pk': u'tt1538403', 'model': 'movies.movie', 'fields': {'omdb_url': 'http://www.omdbapi.com/?i=tt1538403\n', 'plot': u'When her mother disappears, Clary Fray learns that she descends from a line of warriors who protect our world from demons. She joins forces with others like her and heads into a dangerous alternate New York called the Shadow World.', 'rated': u'PG-13', 'language': u'English', 'title': u'The Mortal Instruments: City of Bones', 'country': u'USA, Germany, Canada', 'release_date': u'21 Aug 2013', 'poster_url': u'http://ia.media-imdb.com/images/M/MV5BMTc5NzAyOTQyNF5BMl5BanBnXkFtZTcwNzQ1MDc4OQ@@._V1_SX300.jpg', 'imdb_url': 'http://www.imdb.com/title/tt1538403', 'year': u'2013', 'genre': u'Fantasy, Horror, Mystery', 'runtime': u'130 min', 'poster_loc': u'../static/movie_posters/MV5BMTc5NzAyOTQyNF5BMl5BanBnXkFtZTcwNzQ1MDc4OQ@@._V1_SX300.jpg'}}]
+[
+	{
+		"model": "movies.movie",
+		"pk": "tt4786282",
+		"fields": {
+			"title": "Lights Out",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-07-22",
+			"runtime": "N/A",
+			"genre": "Horror",
+			"plot": "A woman is haunted by a creature that only appears when the lights go out.",
+			"language": "N/A",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTg1OTkxNDgyMV5BMl5BanBnXkFtZTgwMjEzNTc0ODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTg1OTkxNDgyMV5BMl5BanBnXkFtZTgwMjEzNTc0ODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4786282",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4786282"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4160708",
+		"fields": {
+			"title": "Don't Breathe",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-08-26",
+			"runtime": "N/A",
+			"genre": "Horror, Thriller",
+			"plot": "A group of friends break into the house of a wealthy blind man, thinking they'll get away with the perfect heist. They're wrong.",
+			"language": "N/A",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNjE0ODYzMzc3M15BMl5BanBnXkFtZTgwNDM2MjYzODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BNjE0ODYzMzc3M15BMl5BanBnXkFtZTgwNDM2MjYzODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4160708",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4160708"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3235888",
+		"fields": {
+			"title": "It Follows",
+			"year": "2014-01-01",
+			"rated": "R",
+			"release_date": "2015-03-27",
+			"runtime": "100 min",
+			"genre": "Fantasy, Horror, Mystery",
+			"plot": "A young woman is followed by an unknown supernatural force after a sexual encounter.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTUwMDEzNDI1MF5BMl5BanBnXkFtZTgwNzAyODU5MzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTUwMDEzNDI1MF5BMl5BanBnXkFtZTgwNzAyODU5MzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3235888",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3235888"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt5022702",
+		"fields": {
+			"title": "Hush",
+			"year": "2016-01-01",
+			"rated": "R",
+			"release_date": "2016-04-08",
+			"runtime": "81 min",
+			"genre": "Horror, Thriller",
+			"plot": "A deaf writer who retreated into the woods to live a solitary life must fight for her life in silence when a masked killer appears at her window.",
+			"language": "English, American Sign Language",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt5022702",
+			"omdb_url": "http://www.omdbapi.com/?i=tt5022702"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0090605",
+		"fields": {
+			"title": "Aliens",
+			"year": "1986-01-01",
+			"rated": "R",
+			"release_date": "1986-07-18",
+			"runtime": "137 min",
+			"genre": "Action, Horror, Sci-Fi",
+			"plot": "The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?",
+			"language": "English",
+			"country": "UK, USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTYzNzU5MzQ4OV5BMl5BanBnXkFtZTcwMDcxNDg3OA@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTYzNzU5MzQ4OV5BMl5BanBnXkFtZTcwMDcxNDg3OA@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0090605",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0090605"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3278330",
+		"fields": {
+			"title": "Tale of Tales",
+			"year": "2015-01-01",
+			"rated": "N/A",
+			"release_date": "2016-04-22",
+			"runtime": "125 min",
+			"genre": "Fantasy, Horror, Romance",
+			"plot": "The film serves as Garrone's English-language debut and will interweave three separate story strands bookended by brief bits in which Italians Alba Rohrwacher and Massimo Ceccherini will ...",
+			"language": "English, Russian",
+			"country": "UK, France, Italy",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTg0ODQ2NDE1N15BMl5BanBnXkFtZTgwNzAyNzA1ODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTg0ODQ2NDE1N15BMl5BanBnXkFtZTgwNzAyNzA1ODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3278330",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3278330"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1060277",
+		"fields": {
+			"title": "Cloverfield",
+			"year": "2008-01-01",
+			"rated": "PG-13",
+			"release_date": "2008-01-18",
+			"runtime": "85 min",
+			"genre": "Action, Adventure, Horror",
+			"plot": "A group of friends venture deep into the streets of New York on a rescue mission during a rampaging monster attack.",
+			"language": "English, Russian",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ1NzU4NjI5Nl5BMl5BanBnXkFtZTcwNTkyMjc1MQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTQ1NzU4NjI5Nl5BMl5BanBnXkFtZTcwNTkyMjc1MQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1060277",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1060277"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0070917",
+		"fields": {
+			"title": "The Wicker Man",
+			"year": "1973-01-01",
+			"rated": "R",
+			"release_date": "1975-06-01",
+			"runtime": "88 min",
+			"genre": "Horror, Mystery",
+			"plot": "A police sergeant is sent to a Scottish island village in search of a missing girl whom the townsfolk claim never existed. Stranger still are the rites that take place there.",
+			"language": "English",
+			"country": "UK",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjE0Mzk1NzQ2OF5BMl5BanBnXkFtZTgwMTkzNTE0NjE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjE0Mzk1NzQ2OF5BMl5BanBnXkFtZTgwMTkzNTE0NjE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0070917",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0070917"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3065204",
+		"fields": {
+			"title": "The Conjuring 2",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-06-10",
+			"runtime": "N/A",
+			"genre": "Horror",
+			"plot": "Lorraine and Ed Warren travel to north London to help a single mother raising four children alone in a house plagued by malicious spirits.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BYmY1OWFjNWUtMTc3YS00ZTM3LTk0MDYtNzBhOTEwYzBmMTlmXkEyXkFqcGdeQXVyNjQ4NTMyMTg@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BYmY1OWFjNWUtMTc3YS00ZTM3LTk0MDYtNzBhOTEwYzBmMTlmXkEyXkFqcGdeQXVyNjQ4NTMyMTg@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3065204",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3065204"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0829150",
+		"fields": {
+			"title": "Dracula Untold",
+			"year": "2014-01-01",
+			"rated": "PG-13",
+			"release_date": "2014-10-10",
+			"runtime": "92 min",
+			"genre": "Action, Drama, Fantasy",
+			"plot": "As his kingdom is being threatened by the Turks, young prince Vlad Tepes must become a monster feared by his own people in order to obtain the power needed to protect his own family, and the families of his kingdom.",
+			"language": "English, Turkish",
+			"country": "USA, Japan",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTkzNzI1OTI4N15BMl5BanBnXkFtZTgwNTQ2NzEwMjE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTkzNzI1OTI4N15BMl5BanBnXkFtZTgwNTQ2NzEwMjE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0829150",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0829150"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0238546",
+		"fields": {
+			"title": "Queen of the Damned",
+			"year": "2002-01-01",
+			"rated": "R",
+			"release_date": "2002-02-22",
+			"runtime": "101 min",
+			"genre": "Drama, Fantasy, Horror",
+			"plot": "The vampire Lestat becomes a rock star whose music wakes up the queen of all vampires.",
+			"language": "English",
+			"country": "USA, Australia",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTYxNDEyMzEzMV5BMl5BanBnXkFtZTYwMDM1NjA3._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTYxNDEyMzEzMV5BMl5BanBnXkFtZTYwMDM1NjA3._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0238546",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0238546"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4094724",
+		"fields": {
+			"title": "The Purge: Election Year",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-07-01",
+			"runtime": "N/A",
+			"genre": "Action, Horror, Sci-Fi",
+			"plot": "Two years after choosing not to kill the man who killed his son, former police sergeant Barnes has become head of security for Senator Charlene Roan, the front runner in the next Presidential election due to her vow to eliminate the Purge.",
+			"language": "English",
+			"country": "USA, France",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ1OTI0OTY2OV5BMl5BanBnXkFtZTgwODMzNDg5NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTQ1OTI0OTY2OV5BMl5BanBnXkFtZTgwODMzNDg5NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4094724",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4094724"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1156398",
+		"fields": {
+			"title": "Zombieland",
+			"year": "2009-01-01",
+			"rated": "R",
+			"release_date": "2009-10-02",
+			"runtime": "88 min",
+			"genre": "Adventure, Comedy, Horror",
+			"plot": "A shy student trying to reach his family in Ohio, a gun-toting tough guy trying to find the last Twinkie, and a pair of sisters trying to get to an amusement park join forces to travel across a zombie-filled America.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1156398",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1156398"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1051904",
+		"fields": {
+			"title": "Goosebumps",
+			"year": "2015-01-01",
+			"rated": "PG",
+			"release_date": "2015-10-16",
+			"runtime": "103 min",
+			"genre": "Adventure, Comedy, Family",
+			"plot": "A teenager teams up with the daughter of young adult horror author R. L. Stine after the writer's imaginary demons are set free on the town of Madison, Delaware.",
+			"language": "English",
+			"country": "USA, Australia",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjA1OTUzNTQ5Ml5BMl5BanBnXkFtZTgwODQ4NDkxNjE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjA1OTUzNTQ5Ml5BMl5BanBnXkFtZTgwODQ4NDkxNjE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1051904",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1051904"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1974419",
+		"fields": {
+			"title": "The Neon Demon",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-06-24",
+			"runtime": "110 min",
+			"genre": "Horror, Thriller",
+			"plot": "When aspiring model Jesse moves to Los Angeles, her youth and vitality are devoured by a group of beauty-obsessed women who will take any means necessary to get what she has.",
+			"language": "English",
+			"country": "France, USA, Denmark",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTcyMjcxNTc3M15BMl5BanBnXkFtZTgwMTcxNTM4ODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTcyMjcxNTc3M15BMl5BanBnXkFtZTgwMTcxNTM4ODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1974419",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1974419"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1457767",
+		"fields": {
+			"title": "The Conjuring",
+			"year": "2013-01-01",
+			"rated": "R",
+			"release_date": "2013-07-19",
+			"runtime": "112 min",
+			"genre": "Horror",
+			"plot": "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
+			"language": "English, Latin",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1457767",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1457767"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0775440",
+		"fields": {
+			"title": "Cell",
+			"year": "2016-01-01",
+			"rated": "R",
+			"release_date": "2016-07-08",
+			"runtime": "98 min",
+			"genre": "Horror, Sci-Fi, Thriller",
+			"plot": "When a mysterious cell phone signal causes apocalyptic chaos, an artist is determined to reunite with his young son in New England.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTEzNTQ2OTYxMjheQTJeQWpwZ15BbWU4MDc0OTkzNzgx._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTEzNTQ2OTYxMjheQTJeQWpwZ15BbWU4MDc0OTkzNzgx._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0775440",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0775440"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3717252",
+		"fields": {
+			"title": "Underworld: Blood Wars",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-10-14",
+			"runtime": "N/A",
+			"genre": "Action, Horror",
+			"plot": "The plot is unknown at this time.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTU2NzE3NTk2NF5BMl5BanBnXkFtZTgwNjk0NzA2ODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTU2NzE3NTk2NF5BMl5BanBnXkFtZTgwNjk0NzA2ODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3717252",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3717252"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3838992",
+		"fields": {
+			"title": "Yoga Hosers",
+			"year": "2016-01-01",
+			"rated": "R",
+			"release_date": "2016-07-29",
+			"runtime": "88 min",
+			"genre": "Comedy, Fantasy, Horror",
+			"plot": "Two teenage yoga enthusiasts team up with a legendary man-hunter to battle with an ancient evil presence that is threatening their major party plans.",
+			"language": "English, German, French",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ4NjI5ODM5NF5BMl5BanBnXkFtZTgwNjY2MjU2NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTQ4NjI5ODM5NF5BMl5BanBnXkFtZTgwNjY2MjU2NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3838992",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3838992"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt2403021",
+		"fields": {
+			"title": "The Green Inferno",
+			"year": "2013-01-01",
+			"rated": "R",
+			"release_date": "2015-09-25",
+			"runtime": "100 min",
+			"genre": "Adventure, Horror",
+			"plot": "A group of student activists travels to the Amazon to save the rain forest and soon discover that they are not alone, and that no good deed goes unpunished.",
+			"language": "English",
+			"country": "USA, Chile, Canada",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTE0MjgzMjk5MzdeQTJeQWpwZ15BbWU4MDM5OTM1MTYx._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTE0MjgzMjk5MzdeQTJeQWpwZ15BbWU4MDM5OTM1MTYx._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt2403021",
+			"omdb_url": "http://www.omdbapi.com/?i=tt2403021"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0816711",
+		"fields": {
+			"title": "World War Z",
+			"year": "2013-01-01",
+			"rated": "PG-13",
+			"release_date": "2013-06-21",
+			"runtime": "116 min",
+			"genre": "Action, Adventure, Horror",
+			"plot": "Former United Nations employee Gerry Lane traverses the world in a race against time to stop the Zombie pandemic that is toppling armies and governments, and threatening to destroy humanity itself.",
+			"language": "English, Spanish, Hebrew, Arabic",
+			"country": "USA, Malta",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTg0NTgxMjIxOF5BMl5BanBnXkFtZTcwMDM0MDY1OQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTg0NTgxMjIxOF5BMl5BanBnXkFtZTcwMDM0MDY1OQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0816711",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0816711"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0078748",
+		"fields": {
+			"title": "Alien",
+			"year": "1979-01-01",
+			"rated": "R",
+			"release_date": "1979-06-22",
+			"runtime": "117 min",
+			"genre": "Horror, Sci-Fi",
+			"plot": "After a space merchant vessel perceives an unknown transmission as distress call, their landing on the source planet finds one of the crew attacked by a mysterious lifeform. Continuing their journey back to Earth with the attacked crew having recovered and the critter deceased, they soon realize that its life cycle has merely begun.",
+			"language": "English, Spanish",
+			"country": "USA, UK",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTU1ODQ4NjQyOV5BMl5BanBnXkFtZTgwOTQ3NDU2MTE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTU1ODQ4NjQyOV5BMl5BanBnXkFtZTgwOTQ3NDU2MTE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0078748",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0078748"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4503598",
+		"fields": {
+			"title": "Emelie",
+			"year": "2015-01-01",
+			"rated": "N/A",
+			"release_date": "2016-03-04",
+			"runtime": "80 min",
+			"genre": "Horror, Thriller",
+			"plot": "A couple's replacement babysitter turns out to be more than they bargined for when she subjects their kids to a series of twisted activities.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNDA4OTIzNDI2N15BMl5BanBnXkFtZTgwNTc4MzYwODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BNDA4OTIzNDI2N15BMl5BanBnXkFtZTgwNTc4MzYwODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4503598",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4503598"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0070047",
+		"fields": {
+			"title": "The Exorcist",
+			"year": "1973-01-01",
+			"rated": "R",
+			"release_date": "1973-12-26",
+			"runtime": "122 min",
+			"genre": "Horror",
+			"plot": "When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.",
+			"language": "German, Arabic, Latin, Greek, English, French",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTgxMjIyNTc5Nl5BMl5BanBnXkFtZTgwMjgwNDgwNzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTgxMjIyNTc5Nl5BMl5BanBnXkFtZTgwMjgwNDgwNzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0070047",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0070047"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1374989",
+		"fields": {
+			"title": "Pride and Prejudice and Zombies",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-02-05",
+			"runtime": "107 min",
+			"genre": "Action, Horror, Romance",
+			"plot": "Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies.",
+			"language": "English",
+			"country": "USA, UK",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjE1MzA3NzYxMl5BMl5BanBnXkFtZTgwMzQ0NDA5NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjE1MzA3NzYxMl5BMl5BanBnXkFtZTgwMzQ0NDA5NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1374989",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1374989"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4264426",
+		"fields": {
+			"title": "Bite",
+			"year": "2015-01-01",
+			"rated": "NOT RATED",
+			"release_date": "2016-05-06",
+			"runtime": "90 min",
+			"genre": "Horror",
+			"plot": "While on her bachelorette party getaway, Casey, the bride to be, gets a seemingly harmless bite from an unknown insect. After returning home with cold feet, Casey tries to call off her ...",
+			"language": "English",
+			"country": "Canada",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjMyMjM2OTUwMV5BMl5BanBnXkFtZTgwNjExNjM4NjE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjMyMjM2OTUwMV5BMl5BanBnXkFtZTgwNjExNjM4NjE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4264426",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4264426"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0115963",
+		"fields": {
+			"title": "The Craft",
+			"year": "1996-01-01",
+			"rated": "R",
+			"release_date": "1996-05-03",
+			"runtime": "101 min",
+			"genre": "Drama, Fantasy, Horror",
+			"plot": "A newcomer to a Catholic prep high school falls in with a trio of outcast teenage girls who practice witchcraft and they all soon conjure up various spells and curses against those who even slightly anger them.",
+			"language": "English, French",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTIwNTQyNTY1OF5BMl5BanBnXkFtZTYwNTYwNjg4._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTIwNTQyNTY1OF5BMl5BanBnXkFtZTYwNTYwNjg4._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0115963",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0115963"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4263482",
+		"fields": {
+			"title": "The Witch",
+			"year": "2015-01-01",
+			"rated": "R",
+			"release_date": "2016-02-19",
+			"runtime": "92 min",
+			"genre": "Horror, Mystery",
+			"plot": "A family in 1630s New England is torn apart by the forces of witchcraft, black magic and possession.",
+			"language": "English",
+			"country": "USA, UK, Canada, Brazil",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTY4MTU2NjMyNV5BMl5BanBnXkFtZTgwMzUwMDk4NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTY4MTU2NjMyNV5BMl5BanBnXkFtZTgwMzUwMDk4NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4263482",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4263482"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1467304",
+		"fields": {
+			"title": "The Human Centipede (First Sequence)",
+			"year": "2009-01-01",
+			"rated": "R",
+			"release_date": "2010-04-28",
+			"runtime": "92 min",
+			"genre": "Horror",
+			"plot": "A mad scientist kidnaps and mutilates a trio of tourists in order to reassemble them into a human centipede, created by stitching their mouths to each others' rectums.",
+			"language": "English, German, Japanese",
+			"country": "Netherlands",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTY4Nzk3NzYxOF5BMl5BanBnXkFtZTcwODQwNjQzMw@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1467304",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1467304"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt2554274",
+		"fields": {
+			"title": "Crimson Peak",
+			"year": "2015-01-01",
+			"rated": "R",
+			"release_date": "2015-10-16",
+			"runtime": "119 min",
+			"genre": "Drama, Fantasy, Horror",
+			"plot": "In the aftermath of a family tragedy, an aspiring author is torn between love for her childhood friend and the temptation of a mysterious outsider. Trying to escape the ghosts of her past, she is swept away to a house that breathes, bleeds - and remembers.",
+			"language": "English",
+			"country": "USA, Canada",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNTY2OTI5MjAyOV5BMl5BanBnXkFtZTgwNTkzMjQ0NDE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BNTY2OTI5MjAyOV5BMl5BanBnXkFtZTgwNTkzMjQ0NDE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt2554274",
+			"omdb_url": "http://www.omdbapi.com/?i=tt2554274"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0081505",
+		"fields": {
+			"title": "The Shining",
+			"year": "1980-01-01",
+			"rated": "R",
+			"release_date": "1980-05-23",
+			"runtime": "146 min",
+			"genre": "Drama, Horror",
+			"plot": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.",
+			"language": "English",
+			"country": "USA, UK",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BODMxMjE3NTA4Ml5BMl5BanBnXkFtZTgwNDc0NTIxMDE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BODMxMjE3NTA4Ml5BMl5BanBnXkFtZTgwNDc0NTIxMDE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0081505",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0081505"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0054215",
+		"fields": {
+			"title": "Psycho",
+			"year": "1960-01-01",
+			"rated": "R",
+			"release_date": "1960-09-08",
+			"runtime": "109 min",
+			"genre": "Horror, Mystery, Thriller",
+			"plot": "A Phoenix secretary steals $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTgzMzM3NDY0NF5BMl5BanBnXkFtZTgwNDgwNDgwNzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTgzMzM3NDY0NF5BMl5BanBnXkFtZTgwNDgwNDgwNzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0054215",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0054215"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3387542",
+		"fields": {
+			"title": "The Forest",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-01-08",
+			"runtime": "93 min",
+			"genre": "Horror, Mystery, Thriller",
+			"plot": "A woman goes into Japan's Suicide Forest to find her twin sister, and confronts supernatural terror.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjAwMzQzNTc5OV5BMl5BanBnXkFtZTgwNDgyMTU2NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjAwMzQzNTc5OV5BMl5BanBnXkFtZTgwNDgyMTU2NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3387542",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3387542"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1881002",
+		"fields": {
+			"title": "Maggie",
+			"year": "2015-01-01",
+			"rated": "PG-13",
+			"release_date": "2015-05-08",
+			"runtime": "95 min",
+			"genre": "Drama, Horror",
+			"plot": "A teenage girl in the Midwest becomes infected by an outbreak of a disease that slowly turns the infected into cannibalistic zombies. During her transformation, her loving father stays by her side.",
+			"language": "English",
+			"country": "USA, Switzerland",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTkyNzk0MTU2Ml5BMl5BanBnXkFtZTgwNDExNzMyNTE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTkyNzk0MTU2Ml5BMl5BanBnXkFtZTgwNDExNzMyNTE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1881002",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1881002"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0075809",
+		"fields": {
+			"title": "The Car",
+			"year": "1977-01-01",
+			"rated": "PG",
+			"release_date": "1977-05-13",
+			"runtime": "96 min",
+			"genre": "Action, Horror, Mystery",
+			"plot": "A mysterious black, sleek automobile terrorizes everyone it comes into contact with in a small town in Utah. The local sheriff may be the only person who can stop this menace which has been possessed by pure evil.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTYxMDAxNjk2MV5BMl5BanBnXkFtZTcwMjM1MzgxMQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTYxMDAxNjk2MV5BMl5BanBnXkFtZTcwMjM1MzgxMQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0075809",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0075809"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3850590",
+		"fields": {
+			"title": "Krampus",
+			"year": "2015-01-01",
+			"rated": "PG-13",
+			"release_date": "2015-12-04",
+			"runtime": "98 min",
+			"genre": "Comedy, Fantasy, Horror",
+			"plot": "A boy who has a bad Christmas ends up accidentally summoning a Christmas demon to his family home.",
+			"language": "English",
+			"country": "USA, New Zealand",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjk0MjMzMTI3NV5BMl5BanBnXkFtZTgwODEyODkxNzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjk0MjMzMTI3NV5BMl5BanBnXkFtZTgwODEyODkxNzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3850590",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3850590"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1648190",
+		"fields": {
+			"title": "The Dark Tower",
+			"year": "2017-01-01",
+			"rated": "N/A",
+			"release_date": "2017-02-17",
+			"runtime": "N/A",
+			"genre": "Fantasy, Horror, Sci-Fi",
+			"plot": "Gunslinger Roland Deschain roams an Old West-like landscape in search of the dark tower, in the hopes that reaching it will preserve his dying world.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ0ODEyNzE5M15BMl5BanBnXkFtZTgwNDQyMjYyNTE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTQ0ODEyNzE5M15BMl5BanBnXkFtZTgwNDQyMjYyNTE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1648190",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1648190"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3567288",
+		"fields": {
+			"title": "The Visit",
+			"year": "2015-01-01",
+			"rated": "PG-13",
+			"release_date": "2015-09-11",
+			"runtime": "94 min",
+			"genre": "Horror, Thriller",
+			"plot": "Two siblings become increasingly frightened by their grandparents' disturbing behavior while visiting them on vacation.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTg3OTM2OTc5MV5BMl5BanBnXkFtZTgwMjMxNDM0NTE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3567288",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3567288"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3882082",
+		"fields": {
+			"title": "The Boy",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-01-22",
+			"runtime": "97 min",
+			"genre": "Horror, Mystery, Thriller",
+			"plot": "An American nanny is shocked that her new English family's boy is actually a life-sized doll. After she violates a list of strict rules, disturbing events make her believe that the doll is really alive.",
+			"language": "English",
+			"country": "USA, China, Canada",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTc1MjcxNzcwMV5BMl5BanBnXkFtZTgwMTE0NTE2NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3882082",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3882082"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3835080",
+		"fields": {
+			"title": "31",
+			"year": "2016-01-01",
+			"rated": "R",
+			"release_date": "2016-09-16",
+			"runtime": "102 min",
+			"genre": "Horror, Thriller",
+			"plot": "Five carnival workers are kidnapped and held hostage in an abandoned, Hell-like compound where they are forced to participate in a violent game, the goal of which is to survive twelve hours against a gang of sadistic clowns.",
+			"language": "English",
+			"country": "USA, UK",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTc2OTk2ODEyMl5BMl5BanBnXkFtZTgwNzcyNDY2NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTc2OTk2ODEyMl5BMl5BanBnXkFtZTgwNzcyNDY2NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3835080",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3835080"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt4062536",
+		"fields": {
+			"title": "Green Room",
+			"year": "2015-01-01",
+			"rated": "R",
+			"release_date": "2016-04-29",
+			"runtime": "95 min",
+			"genre": "Crime, Horror, Thriller",
+			"plot": "After witnessing a murder, a punk rock band is forced into a vicious fight for survival against a group of maniacal skinheads.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjU1ODQ5NzA0N15BMl5BanBnXkFtZTgwMDg5MTA5NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjU1ODQ5NzA0N15BMl5BanBnXkFtZTgwMDg5MTA5NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt4062536",
+			"omdb_url": "http://www.omdbapi.com/?i=tt4062536"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3547682",
+		"fields": {
+			"title": "What We Become",
+			"year": "2015-01-01",
+			"rated": "N/A",
+			"release_date": "2016-03-31",
+			"runtime": "85 min",
+			"genre": "Horror, Thriller",
+			"plot": "A family of four is quarantined in their home as a virulent strand of the flu spreads into town and they are forced to the extreme to escape alive.",
+			"language": "Danish",
+			"country": "Denmark",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNTRmZjZhNTMtMTllMC00ZmRjLWJlZTEtZjFhZWIxYzQ1ZjNlXkEyXkFqcGdeQXVyMjIzMDczOTA@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BNTRmZjZhNTMtMTllMC00ZmRjLWJlZTEtZjFhZWIxYzQ1ZjNlXkEyXkFqcGdeQXVyMjIzMDczOTA@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3547682",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3547682"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1530509",
+		"fields": {
+			"title": "The Human Centipede II (Full Sequence)",
+			"year": "2011-01-01",
+			"rated": "NOT RATED",
+			"release_date": "2011-11-01",
+			"runtime": "91 min",
+			"genre": "Crime, Horror",
+			"plot": "Inspired by the fictional Dr. Heiter, disturbed loner Martin dreams of creating a 12-person centipede and sets out to realize his sick fantasy.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjkwMDI0NjA5OV5BMl5BanBnXkFtZTcwODAxODI4Ng@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjkwMDI0NjA5OV5BMl5BanBnXkFtZTcwODAxODI4Ng@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1530509",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1530509"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3894404",
+		"fields": {
+			"title": "The Faith of Anna Waters",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-05-06",
+			"runtime": "95 min",
+			"genre": "Drama, Horror, Mystery",
+			"plot": "When young and successful reporter Jamie finds out that her sister has died in mysterious circumstances, she travels to Singapore to uncover the truth. There, she discovers multiple deaths ...",
+			"language": "English",
+			"country": "Singapore, USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjIxMzM1MTQ4NF5BMl5BanBnXkFtZTgwMDY1Njk0ODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjIxMzM1MTQ4NF5BMl5BanBnXkFtZTgwMDY1Njk0ODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3894404",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3894404"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1179933",
+		"fields": {
+			"title": "10 Cloverfield Lane",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-03-11",
+			"runtime": "103 min",
+			"genre": "Drama, Horror, Mystery",
+			"plot": "After getting in a car accident, a woman is held in a shelter with two men, who claim the outside world is affected by a widespread chemical attack.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjEzMjczOTIxMV5BMl5BanBnXkFtZTgwOTUwMjI3NzE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjEzMjczOTIxMV5BMl5BanBnXkFtZTgwOTUwMjI3NzE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1179933",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1179933"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1878841",
+		"fields": {
+			"title": "The Darkness",
+			"year": "2016-01-01",
+			"rated": "PG-13",
+			"release_date": "2016-05-13",
+			"runtime": "N/A",
+			"genre": "Horror, Thriller",
+			"plot": "A family returns from a Grand Canyon vacation with a supernatural presence in tow.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjIxMTg2NjAyMV5BMl5BanBnXkFtZTgwNDE5ODIxODE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMjIxMTg2NjAyMV5BMl5BanBnXkFtZTgwNDE5ODIxODE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1878841",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1878841"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1259521",
+		"fields": {
+			"title": "The Cabin in the Woods",
+			"year": "2012-01-01",
+			"rated": "R",
+			"release_date": "2012-04-13",
+			"runtime": "95 min",
+			"genre": "Fantasy, Horror, Mystery",
+			"plot": "Five friends go for a break at a remote cabin in the woods, where they get more than they bargained for. Together, they must discover the truth behind the cabin in the woods.",
+			"language": "English, Japanese",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1259521",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1259521"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0116367",
+		"fields": {
+			"title": "From Dusk Till Dawn",
+			"year": "1996-01-01",
+			"rated": "R",
+			"release_date": "1996-01-19",
+			"runtime": "108 min",
+			"genre": "Crime, Fantasy, Horror",
+			"plot": "Two criminals and their hostages unknowingly seek temporary refuge in an establishment populated by vampires, with chaotic results.",
+			"language": "English, Spanish",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTUzNjI5NTUwOV5BMl5BanBnXkFtZTcwMDAyMDQyMQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTUzNjI5NTUwOV5BMl5BanBnXkFtZTcwMDAyMDQyMQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0116367",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0116367"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3605418",
+		"fields": {
+			"title": "Knock Knock",
+			"year": "2015-01-01",
+			"rated": "R",
+			"release_date": "2015-10-09",
+			"runtime": "99 min",
+			"genre": "Crime, Horror, Thriller",
+			"plot": "When a devoted husband and father is left home alone for the weekend, two stranded young women unexpectedly knock on his door for help. What starts out as a kind gesture results in a dangerous seduction and a deadly game of cat and mouse.",
+			"language": "English, Spanish",
+			"country": "USA, Chile",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTY5NTkyMzM1Nl5BMl5BanBnXkFtZTgwODU3Njc2NjE@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTY5NTkyMzM1Nl5BMl5BanBnXkFtZTgwODU3Njc2NjE@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt3605418",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3605418"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt1538403",
+		"fields": {
+			"title": "The Mortal Instruments: City of Bones",
+			"year": "2013-01-01",
+			"rated": "PG-13",
+			"release_date": "2013-08-21",
+			"runtime": "130 min",
+			"genre": "Fantasy, Horror, Mystery",
+			"plot": "When her mother disappears, Clary Fray learns that she descends from a line of warriors who protect our world from demons. She joins forces with others like her and heads into a dangerous alternate New York called the Shadow World.",
+			"language": "English",
+			"country": "USA, Germany, Canada",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTc5NzAyOTQyNF5BMl5BanBnXkFtZTcwNzQ1MDc4OQ@@._V1_SX300.jpg",
+			"poster_loc": "../static/movie_posters/MV5BMTc5NzAyOTQyNF5BMl5BanBnXkFtZTcwNzQ1MDc4OQ@@._V1_SX300.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt1538403",
+			"omdb_url": "http://www.omdbapi.com/?i=tt1538403"
+		}
+	}
+]
