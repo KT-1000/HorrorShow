@@ -1,15 +1,25 @@
 {% extends 'movies/base.html' %}
 {% block content %}
-    <h2>Most Viewed Horror Movies</h2>
-        {% for movie in movies %}
-            <div>
-                <a href="{{ movie.imdb_url }}" target="_blank">
-                    <img src={{ movie.poster_loc }}>
-                </a>
-                <h3>
-                    <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
-                </h3>
-                <p>{{ movie.plot }}</p>
-            </div>
+    <div>
+        {% for movie in collection.movies %}
+            <a href="{{ movie.imdb_url }}" target="_blank">
+                <img src={{ movie.poster_loc }}>
+            </a>
+            <h3>
+                <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
+            </h3>
+            <p>{{ movie.plot }}</p>
         {% endfor %}
+    </div>
+    {% for movie in recent_movies %}
+        <div>
+            <a href="{{ movie.imdb_url }}" target="_blank">
+                <img src={{ movie.poster_loc }}>
+            </a>
+            <h3>
+                <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
+            </h3>
+            <p>{{ movie.plot }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}
