@@ -2,6 +2,7 @@ from django.template import loader
 from django.http import HttpResponse
 from .models import Collection, Movie
 from django.shortcuts import render_to_response, redirect
+from watson import search as watson
 
 
 def index(request):
@@ -18,17 +19,13 @@ def index(request):
 
 
 def search(request):
-    """ Takes in http request, returns the search_results html
+    """ Takes in http request and a user-entered search string, returns the search_results html
         with the objects found by the search available to that template.
     """
-    # Movie.objects.get(title__iexact=user-input)
-    # Collection.objects.get(name=user-input)
-    # Collection.objects.filter(movie_title_contaings=user-input)
-    # # model fields to return
-    # model_map = {Movie: ["title", "year", "plot", "release_date", "poster_loc"], Collection: ["title", "description", "creation_date", "movies"]}
-    #
-    # return render_to_response("movies/search_results.html")
-    pass
+    search_str = request.GET["user_search"]
+    search_results = watson.search(search_str)
+
+    return render_to_response("movies/search_results.html", search_results)
 
 
 def movies(request):
