@@ -45,12 +45,9 @@ def collections(request):
     """ Takes in http request, renders all collections, ordered by creation date, paginated. """
     # get all collections ordered with most recent creation date first
     collections = Collection.objects.order_by('-creation_date')
-    # since we want to display each movie in the collection, get movies info
-    collection_movies = Movie.attribute_answers.all() in Collection.attribute_answers.all()
     template = loader.get_template('movies/collections.html')
     context = {
         'collections': collections,
-        'collection_movies': collection_movies,
     }
     return HttpResponse(template.render(context, request))
 

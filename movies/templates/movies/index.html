@@ -1,7 +1,7 @@
 {% extends 'movies/base.html' %}
 {% block content %}
     <div>
-        <h3>Featured Collection: {{ featured_collection.name }}</h3>
+        <h3>Featured Collection: {{ featured_collection.title }}</h3>
         {% for movie in featured_collection.movies.all %}
             <a href="{{ movie.imdb_url }}" target="_blank">
                 <img src={{ movie.poster_loc }}>

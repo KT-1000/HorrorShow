@@ -2,7 +2,8 @@
 {% block content %}
     {% for collection in collections %}
         <div>
-            {% for movie in featured_collection.movies.all %}
+            <h3>{{ collection.title }}</h3>
+            {% for movie in collection.movies.all %}
             <span>
             <a href="{{ movie.imdb_url }}" target="_blank">
                 <img src={{ movie.poster_loc }}>
