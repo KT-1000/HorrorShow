@@ -1,9 +1,9 @@
 {% extends 'movies/base.html' %}
 {% block content %}
-    <h3>Search results for {{ query_string }}</h3>
+    <h3>Search results for {{ user_str }}</h3>
     <ul>
-        {% for found_entries in query_string %}
-            <li>{{ found_entries }}</li>
+        {% for result in search_results %}
+            <li>{{ result.title }}</li>
         {% endfor %}
     </ul>
 {% endblock %}
