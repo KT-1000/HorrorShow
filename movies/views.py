@@ -21,7 +21,9 @@ def search(request):
     """ Takes in http request, returns the search_results html
         with the objects found by the search available to that template.
     """
-    # query = "search-query"
+    # Movie.objects.get(title__iexact=user-input)
+    # Collection.objects.get(name=user-input)
+    # Collection.objects.filter(movie_title_contaings=user-input)
     # # model fields to return
     # model_map = {Movie: ["title", "year", "plot", "release_date", "poster_loc"], Collection: ["title", "description", "creation_date", "movies"]}
     #
@@ -44,7 +46,7 @@ def collections(request):
     # get all collections ordered with most recent creation date first
     collections = Collection.objects.order_by('-creation_date')
     # since we want to display each movie in the collection, get movies info
-    collection_movies = Collection.movies.objects.all()
+    collection_movies = Movie.attribute_answers.all() in Collection.attribute_answers.all()
     template = loader.get_template('movies/collections.html')
     context = {
         'collections': collections,
