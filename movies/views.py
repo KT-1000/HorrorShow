@@ -24,8 +24,13 @@ def search(request):
     """
     search_str = request.GET["user_search"]
     search_results = watson.search(search_str)
+    template = loader.get_template('movies/search_results.html')
+    context = {
+        'search_results': search_results,
+        'search_str': search_str
+    }
 
-    return render_to_response("movies/search_results.html", search_results)
+    return render_to_response(template.render(context, request))
 
 
 def movies(request):
