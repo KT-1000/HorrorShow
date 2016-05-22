@@ -3,9 +3,13 @@
 
 {% block content %}
     <h3>Search results for {{ search_str }}</h3>
-    <ul>
+    <div>
         {% for result in search_results %}
-            <li>{{ result.object|class_name }}:{{ result.title }}</li>
+        {% if result.object|class_name == 'Movie' %}
+            <div><a href="{{ result.imdb_url }}">{{ result.title }}</a></div>
+        {% elif result.object|class_name == 'Collection' %}
+            <div>{{ result.title }}: {{ result.description }}</div>
+        {% endif %}
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}
