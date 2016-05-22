@@ -9,8 +9,8 @@ class MoviesConfig(AppConfig):
 
     def ready(self):
         # make Movie model searchable
-        Movie = self.get_model("Movie")
-        watson.register(Movie)
+        movie = self.get_model("Movie")
+        watson.register(movie)
         # make Collection model searchable
-        Collection = self.get_model("Collection")
-        watson.register(Collection)
+        collection = self.get_model("Collection")
+        watson.register(collection)
