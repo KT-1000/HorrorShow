@@ -30,7 +30,7 @@ def search(request):
         'search_str': search_str,
     }
 
-    return render_to_response(template.render(context, request))
+    return HttpResponse(template.render(context, request))
 
 
 def movies(request):
