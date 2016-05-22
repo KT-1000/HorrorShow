@@ -13,7 +13,7 @@ def index(request):
     template = loader.get_template('movies/index.html')
     context = {
         'recent_movies': recent_movies,
-        'featured_collection': featured_collection
+        'featured_collection': featured_collection,
     }
     return HttpResponse(template.render(context, request))
 
@@ -27,7 +27,7 @@ def search(request):
     template = loader.get_template('movies/search_results.html')
     context = {
         'search_results': search_results,
-        'search_str': search_str
+        'search_str': search_str,
     }
 
     return render_to_response(template.render(context, request))
