@@ -1,9 +1,11 @@
 {% extends 'movies/base.html' %}
+{% load custom_class_name %}
+
 {% block content %}
     <h3>Search results for {{ search_str }}</h3>
     <ul>
         {% for result in search_results %}
-            <li>{{ result.title }}</li>
+            <li>{{ result.object|class_name }}:{{ result.title }}</li>
         {% endfor %}
     </ul>
 {% endblock %}

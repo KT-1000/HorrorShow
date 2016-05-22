@@ -24,6 +24,11 @@ def search(request):
     """
     search_str = request.GET["user_search"]
     search_results = watson.search(search_str)
+    for result in search_results:
+        if type(result.object) is Movie:
+            print "Found Movie: " + result.title
+        elif type(result.object) is Collection:
+            print "Found Collection: " + result.title
     template = loader.get_template('movies/search_results.html')
     context = {
         'search_results': search_results,
