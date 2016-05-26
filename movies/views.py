@@ -69,6 +69,16 @@ def movies(request):
     return HttpResponse(template.render(context, request))
 
 
+def movie_detail(request, imdb_id):
+    """ Takes in request and IMDb ID to provide movie detail view """
+    movie = Movie.objects.get(imdb_id)
+    template = loader.get_template('movies/movie_detail.html')
+    context = {
+        'movie': movie,
+    }
+    return HttpResponse(template.render(context, request))
+
+
 def collections(request):
     """ Takes in http request, renders all collections, ordered by creation date, paginated. """
     # get all collections ordered with most recent creation date first
@@ -76,6 +86,16 @@ def collections(request):
     template = loader.get_template('movies/collections.html')
     context = {
         'collections': collections,
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def collection_detail(request, collection_id):
+    """ Takes in request and IMDb ID to provide movie detail view """
+    collection = Collection.objects.get(collection_id)
+    template = loader.get_template('movies/collection_detail.html')
+    context = {
+        'collection': collection,
     }
     return HttpResponse(template.render(context, request))
 

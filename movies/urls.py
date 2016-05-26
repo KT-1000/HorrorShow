@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^movies', views.movies, name='movies'),
     url(r'^collections', views.collections, name='collections'),
     url(r'^create_collection', views.create_collection, name='create_collection'),
+    url(r'^(?P<imdb_id>[0-9]+)/$', views.movie_detail, name='movie'),
+    url(r'^collection/(?P<id>[0-9]+)/$', views.collection_detail, name='collection'),
 ]
