@@ -81,7 +81,6 @@ def get_movie_info(in_file, out_file):
                              + title + '|' \
                              + year + '|' \
                              + rated + '|' \
-                             + release_date + '|' \
                              + runtime + '|' \
                              + genre + '|' \
                              + plot + '|' \
@@ -93,11 +92,6 @@ def get_movie_info(in_file, out_file):
                              + omdb_url
 
                 movies_file.write(print_line)
-
-
-def get_streaming_sources():
-    """"""
-    #{Base API URL} /sources/all/ {"all", "movies" or "shows"}
 
 
 def get_movie_json(in_file, out_file):
