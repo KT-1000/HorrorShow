@@ -1,27 +1,31 @@
 {% extends 'movies/base.html' %}
 {% block content %}
-    <div>
+    <div class="row">
         <h3>Featured Collection: {{ featured_collection.title }}</h3>
         {% for movie in featured_collection.movies.all %}
+            <div class="col-md-2">
             <a href="{{ movie.imdb_url }}" target="_blank">
-                <img src={{ movie.poster_loc }}>
+                <img class="img-responsive" src={{ movie.poster_loc }}>
             </a>
             <h3>
                 <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
             </h3>
             <p>{{ movie.plot }}</p>
+            </div>
         {% endfor %}
-    </div>
-    <h3>New Movies</h3>
-    {% for movie in recent_movies %}
-        <div>
-            <a href="{{ movie.imdb_url }}" target="_blank">
-                <img src={{ movie.poster_loc }}>
-            </a>
-            <h3>
-                <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
-            </h3>
-            <p>{{ movie.plot }}</p>
-        </div>
-    {% endfor %}
+    </div><!-- .row -->
+    <div class="row">
+        <h3>New Movies</h3>
+        {% for movie in recent_movies %}
+            <div class="col-md-2">
+                <a href="{{ movie.imdb_url }}" target="_blank">
+                    <img class="img-responsive" src={{ movie.poster_loc }}>
+                </a>
+                <h3>
+                    <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
+                </h3>
+                <p>{{ movie.plot }}</p>
+            </div>
+        {% endfor %}
+    </div><!-- .row -->
 {% endblock %}
