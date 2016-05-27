@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from .models import Collection, Movie
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import get_object_or_404, redirect
 from watson import search as watson
 
 
@@ -69,9 +69,9 @@ def movies(request):
     return HttpResponse(template.render(context, request))
 
 
-def movie_detail(request, imdb_id):
+def movie_detail(request, pk):
     """ Takes in request and IMDb ID to provide movie detail view """
-    movie = Movie.objects.get(imdb_id)
+    movie = get_object_or_404(Movie, pk=pk)
     template = loader.get_template('movies/movie_detail.html')
     context = {
         'movie': movie,
