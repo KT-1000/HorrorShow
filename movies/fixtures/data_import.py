@@ -18,9 +18,10 @@ def get_movie_ids(out_file):
     """
     # list of imdb id numbers to pass to use in
     imdb_ids = []
+    # url pattern for all results is: http://www.imdb.com/search/title?genres=horror&sort=moviemeter<&start=51>&title_type=feature
 
-    # Get html from URL, format 'http://www.imdb.com/search/title?genres=horror&sort=moviemeter,asc&start=51&title_type=feature'
-    html = urlopen("http://www.imdb.com/search/title?genres=horror&sort=moviemeter,asc&title_type=feature")
+    # Get html from URL
+    html = urlopen("http://www.imdb.com/search/title?genres=horror&sort=moviemeter&start=51&title_type=feature")
     soup = BeautifulSoup(html, 'html.parser')
 
     with open(out_file, 'w') as cur_file:
@@ -92,6 +93,11 @@ def get_movie_info(in_file, out_file):
                              + omdb_url
 
                 movies_file.write(print_line)
+
+
+def get_streaming_sources():
+    """"""
+    #{Base API URL} /sources/all/ {"all", "movies" or "shows"}
 
 
 def get_movie_json(in_file, out_file):
