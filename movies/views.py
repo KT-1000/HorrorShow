@@ -100,8 +100,8 @@ def collections(request):
 
 def collection_detail(request, collection_id):
     """ Takes in request and IMDb ID to provide movie detail view """
+    # get collection based on the collection id
     collection = get_object_or_404(Collection, id=collection_id)
-    #collection = Collection.objects.get(collection_id)
 
     template = loader.get_template('movies/collection_detail.html')
     context = {
