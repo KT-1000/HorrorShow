@@ -1,12 +1,9 @@
 {% extends 'movies/base.html' %}
 {% block content %}
     <div>
-        <a href="{{ movie.imdb_url }}" target="_blank">
-            <img src={{ movie.poster_loc }}>
-        </a>
-        <h3>
-            <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
-        </h3>
+        <img src={{ movie.poster_loc }}>
+        <h3>{{ movie.title }}</h3>
         <p>{{ movie.plot }}</p>
+        <a href="{{ movie.imdb_url }}">IMDb</a>
     </div>
 {% endblock %}

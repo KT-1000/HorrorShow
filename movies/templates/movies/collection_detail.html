@@ -1,12 +1,17 @@
 {% extends 'movies/base.html' %}
 {% block content %}
-    <div>
-        <a href="{{ collection.imdb_url }}" target="_blank">
-            <img src={{ movie.poster_loc }}>
-        </a>
-        <h3>
-            <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
-        </h3>
-        <p>{{ movie.plot }}</p>
+    <div class="row">
+        <h3>{{ collection.title }}</h3>
+        {% for movie in collection.movies.all %}
+            <div class="col-md-2">
+            <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                <img class="img-responsive" src={{ movie.poster_loc }}>
+            </a>
+            <h3>
+                <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
+            </h3>
+            <p>{{ movie.plot }}</p>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}

@@ -77,9 +77,9 @@ def movies(request):
     return HttpResponse(template.render(context, request))
 
 
-def movie_detail(request, pk):
+def movie_detail(request, imdb_id):
     """ Takes in request and IMDb ID to provide movie detail view """
-    movie = get_object_or_404(Movie, pk=pk)
+    movie = get_object_or_404(Movie, imdb_id=imdb_id)
     template = loader.get_template('movies/movie_detail.html')
     context = {
         'movie': movie,
@@ -100,7 +100,9 @@ def collections(request):
 
 def collection_detail(request, collection_id):
     """ Takes in request and IMDb ID to provide movie detail view """
-    collection = Collection.objects.get(collection_id)
+    collection = get_object_or_404(Collection, id=collection_id)
+    #collection = Collection.objects.get(collection_id)
+
     template = loader.get_template('movies/collection_detail.html')
     context = {
         'collection': collection,
