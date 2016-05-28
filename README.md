@@ -3,14 +3,18 @@ Hackbright Final Project
 
 Initial Setup
 ======================================================================================================
-Using pgAdmin, create postgreSQL database called horrorshow.
+Create postgreSQL database called horrorshow.
 
 From manage.py, 
   migrate to set up your database tables based on app models.
   
   createsuperuser using the credentials you prefer.
   
-  loaddata movies.json
+  loaddata movies.json to populate the database.
+  
+  installwatson to enable search feature.
+  
+  buildwatson to create search indexing.
 
 To create the movis.json, in HorroShow/movies/fixtures/, run: 
   python -i data_import.py
