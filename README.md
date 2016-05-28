@@ -5,7 +5,9 @@ Initial Setup
 ======================================================================================================
 Using pgAdmin, create postgreSQL database called horrorshow.
 
-From manage.py, createsuperuser using the credentials you prefer.
+From manage.py, 
+  migrate to set up your database tables based on app models.
+  createsuperuser using the credentials you prefer.
 
 To populate the horrorshow db, in HorroShow/movies/fixtures/, run: 
   python -i data_import.py
