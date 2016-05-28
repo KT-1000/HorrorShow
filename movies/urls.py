@@ -10,6 +10,6 @@ urlpatterns = [
     url(r'^movies', views.movies, name='movies'),
     url(r'^collections', views.collections, name='collections'),
     url(r'^create_collection', views.create_collection, name='create_collection'),
-    url(r'^movie/(?P<pk>/[a-z]{0,10}/$', views.movie_detail, name='movie'),
+    url(r'^movie/(?P<pk>[\w\-]+)/$', views.movie_detail, name='movie'),
     url(r'^collection/(?P<pk>\d+)/$', views.collection_detail, name='collection'),
 ]
