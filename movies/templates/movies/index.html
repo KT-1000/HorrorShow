@@ -1,5 +1,6 @@
 {% extends 'movies/base.html' %}
 {% block content %}
+    {% if featured_collection %}
     <div class="row">
         <h3>Featured Collection: {{ featured_collection.title }}</h3>
         {% for movie in featured_collection.movies.all %}
@@ -14,6 +15,7 @@
             </div>
         {% endfor %}
     </div><!-- .row -->
+    {% endif %}
     <div class="row">
         <h3>New Movies</h3>
         {% for movie in recent_movies %}

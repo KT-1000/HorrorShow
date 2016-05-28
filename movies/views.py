@@ -10,7 +10,13 @@ from watson import search as watson
 def index(request):
     """ Takes in http request, renders the main page. """
     recent_movies = Movie.objects.order_by('-release_date')[:5]
-    featured_collection = Collection.objects.order_by('creation_date')[0]
+
+    qs_featured_collection = Collection.objects.order_by('creation_date')
+
+    featured_collection = None
+    if len(qs_featured_collection):
+        featured_collection = qs_featured_collection[0]
+
     # get featured collection(s)
     template = loader.get_template('movies/index.html')
     context = {
