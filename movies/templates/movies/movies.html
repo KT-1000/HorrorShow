@@ -6,7 +6,7 @@
                 <img src={{ movie.poster_loc }}>
             </a>
             <h3>
-                <a href="{% url 'movie' pk=movie.pk %}" target="_blank">{{ movie.title }}</a>
+                <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
             </h3>
             <p>{{ movie.plot }}</p>
         </div>
