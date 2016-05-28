@@ -16,6 +16,7 @@
         {% endfor %}
     </div><!-- .row -->
     {% endif %}
+    {% if recent_movies %}
     <div class="row">
         <h3>New Movies</h3>
         {% for movie in recent_movies %}
@@ -30,4 +31,5 @@
             </div>
         {% endfor %}
     </div><!-- .row -->
+    {% endif %}
 {% endblock %}

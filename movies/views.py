@@ -9,10 +9,12 @@ from watson import search as watson
 
 def index(request):
     """ Takes in http request, renders the main page. """
-    recent_movies = Movie.objects.order_by('-release_date')[:5]
+    qs_recent_movies = Movie.objects.order_by('-release_date')
+    recent_movies = None
+    if len(qs_recent_movies):
+        recent_movies = qs_recent_movies[:12]
 
     qs_featured_collection = Collection.objects.order_by('creation_date')
-
     featured_collection = None
     if len(qs_featured_collection):
         featured_collection = qs_featured_collection[0]
