@@ -1,6 +1,5 @@
 from django.template import loader
 from django.http import HttpResponse
-from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from .models import Collection, Movie
 from django.shortcuts import get_object_or_404, redirect
@@ -26,30 +25,6 @@ def index(request):
         'featured_collection': featured_collection,
     }
     return HttpResponse(template.render(context, request))
-
-
-def user_login(request):
-    """ Takes http request from user-entered form and adds user to session. """
-    username = request.POST['username']
-    password = request.POST['password']
-    user = authenticate(username=username, password=password)
-    if user is not None:
-        if user.is_active:
-            login(request, user)
-            # Redirect to a success page
-            return redirect('/')
-
-        else:
-            # Return a 'disabled account' error message
-            print "This account has been disabled. Bummer!"
-    else:
-        # Return an 'invalid login' error message.
-        print "Invalid Login, blargh!"
-
-
-def user_logout(request):
-    """ Takes http request and removes user from session. """
-    logout(request)
 
 
 def search(request):
