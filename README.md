@@ -7,9 +7,12 @@ Using pgAdmin, create postgreSQL database called horrorshow.
 
 From manage.py, 
   migrate to set up your database tables based on app models.
+  
   createsuperuser using the credentials you prefer.
+  
+  loaddata movies.json
 
-To populate the horrorshow db, in HorroShow/movies/fixtures/, run: 
+To create the movis.json, in HorroShow/movies/fixtures/, run: 
   python -i data_import.py
   
 In this interactive python prompt, if movie_ids.txt, movie_info.txt and/or movies.json do not exist, 
