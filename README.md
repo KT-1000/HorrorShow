@@ -6,15 +6,24 @@ Initial Setup
 Create postgreSQL database called horrorshow.
 
 From manage.py, 
-  migrate to set up your database tables based on app models.
+  migrate 
+  to set up your database tables based on app models.
   
-  createsuperuser using the credentials you prefer.
+  createsuperuser 
+  using the credentials you prefer.
   
-  loaddata movies.json to populate the database.
+  loaddata movies.json 
+  to populate the database.
   
-  installwatson to enable search feature.
+  installwatson
+  to enable search feature.
   
-  buildwatson to create search indexing.
+  buildwatson
+  to create search indexing.
+
+Set environment variables on server, specifically:
+  GUIDEBOX_KEY
+  to provide information on where to watch movies.
 
 To create the movis.json, in HorroShow/movies/fixtures/, run: 
   python -i data_import.py
