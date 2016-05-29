@@ -8,7 +8,11 @@
         {% for movie in featured_collection.movies.all %}
             <div class="col-md-2">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                    {% if movie.guidebox_id != '0' %}
+                    <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
+                    {% else %}
                     <img class="img-responsive" src={{ movie.poster_loc }}>
+                    {% endif %}
                 </a>
                 <h3>
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
@@ -24,7 +28,11 @@
         {% for movie in recent_movies %}
             <div class="col-md-2">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                    {% if movie.guidebox_id != '0' %}
+                    <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
+                    {% else %}
                     <img class="img-responsive" src={{ movie.poster_loc }}>
+                    {% endif %}
                 </a>
                 <h3>
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>

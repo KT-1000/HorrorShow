@@ -1,11 +1,10 @@
 20160528 ~ Movie detail view
 20160528 ~ Collection detail view
-Fix poster image paths to use URL rather than directory structure
-Guidebox API integration
+20160528 ~ Guidebox API integration
+20160528 ~ Fix poster image paths to use URL rather than directory structure
 Collection creation ability
 Dashboard with user's collections and movies
 Populate db with ALL horror movies on IMDb
-Login authentication
+Login "authentication"
 Pagination for movies and collections and search results
 Tests
--
