@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Collection, Movie
 from django.shortcuts import get_object_or_404, redirect
 from watson import search as watson
+from fixtures import data_import as di
 
 
 def index(request):
@@ -89,3 +90,21 @@ def collection_detail(request, collection_id):
 def create_collection(request):
     """ Takes http request, renders the page containing the form to create collections. """
     pass
+
+
+def guidebox_import(request):
+    """"""
+    qs_movies = Movie.objects.all()
+    for movie in qs_movies:
+        movie.guidebox_data = di.guidebox_import(movie.guidebox_id)
+        movie.save()
+
+    return redirect('/HorrorShow')
+
+
+def omdb_import(request):
+    """"""
+    # di.get_movie_info("movies/fixtures/movie_ids.txt", "movies/fixtures/movie_info.txt")
+    di.get_movie_json("movies/fixtures/movie_info.txt", "movies/fixtures/movies.json")
+
+    return redirect('/HorrorShow')

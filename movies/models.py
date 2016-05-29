@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.postgres.fields import JSONField
 
 
 class MovieManager(models.Manager):
@@ -8,6 +9,7 @@ class MovieManager(models.Manager):
     # to make a movie, call movie = Movie.objects.create_movie(<params>)
     def create_movie(self,
                      imdb_id,
+                     guidebox_id,
                      title,
                      year,
                      rated,
@@ -20,9 +22,11 @@ class MovieManager(models.Manager):
                      poster_url,
                      poster_loc,
                      imdb_url,
-                     omdb_url):
+                     omdb_url,
+                     guidebox_data):
         """ Make an instance of the Movie class.
             Takes in imdb_id,
+                guidebox_id,
                 title,
                 year,
                 rated,
@@ -35,10 +39,12 @@ class MovieManager(models.Manager):
                 poster_url,
                 poster_loc,
                 imdb_url,
-                omdb_url.
+                omdb_url,
+                guidebox_data.
             Returns the Movie object created.
         """
         movie = self.create(imdb_id=imdb_id,
+                            guidebox_id=guidebox_id,
                             title=title,
                             year=year,
                             rated=rated,
@@ -51,7 +57,8 @@ class MovieManager(models.Manager):
                             poster_url=poster_url,
                             poster_loc=poster_loc,
                             imdb_url=imdb_url,
-                            omdb_url=omdb_url)
+                            omdb_url=omdb_url,
+                            guidebox_data=guidebox_data)
 
         return movie
 
@@ -59,6 +66,7 @@ class MovieManager(models.Manager):
 class Movie(models.Model):
     """ Movie record from OMDB API. """
     imdb_id = models.CharField(max_length=15, primary_key=True)
+    guidebox_id = models.CharField(max_length=15, null=True, blank=True)
     title = models.CharField(max_length=250)
     year = models.DateField(null=True, blank=True)
     rated = models.CharField(max_length=10, blank=True)
@@ -72,6 +80,7 @@ class Movie(models.Model):
     poster_loc = models.CharField(max_length=500, blank=True)
     imdb_url = models.URLField(max_length=500)
     omdb_url = models.URLField(max_length=500)
+    guidebox_data = JSONField(null=True, blank=True)
 
     objects = MovieManager()
 

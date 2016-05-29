@@ -3,6 +3,8 @@ from urllib2 import urlopen
 from urllib import urlretrieve
 import json
 import datetime
+import codecs
+from HorrorShow import settings
 
 
 def get_movie_ids(out_file):
@@ -45,42 +47,57 @@ def get_movie_info(in_file, out_file):
         information about that movie and write to out_file.
     """
     # open up the ouput file to hold movie data
-    with open(out_file, 'w') as movies_file:
-        with open(in_file, 'r') as ids_file:
+    with codecs.open(out_file,'w',encoding='utf8') as movies_file:
+        with codecs.open(in_file,'r',encoding='utf8') as ids_file:
             for imdb_id in ids_file:
-                # create URI which will return JSON
-                # http://www.omdbapi.com/?i=tt1974419&plot=short&r=json
-                omdb_url = "http://www.omdbapi.com/?i=" + imdb_id
-                imdb_url = "http://www.imdb.com/title/" + imdb_id.strip()
-                response = urlopen(omdb_url)
-                data = json.loads(response.read())
-                imdb_id = data['imdbID']
-                title = data['Title']
-                year = data['Year']
-                rated = data["Rated"]
-                release_date = data['Released']
-                runtime = data['Runtime']
-                genre = data['Genre']
-                plot = data['Plot']
-                language = data['Language']
-                country = data['Country']
-                poster_url = data['Poster']
+                imdb_id = imdb_id.strip()
+
+                imdb_url = "http://www.imdb.com/title/" + imdb_id
+
+                # OMDb API returns JSON
+                # http://www.omdbapi.com/?i=tt1974419&plot=full&r=json
+                omdb_url = "http://www.omdbapi.com/?i=" + imdb_id + "&plot=full&r=json"
+                omdb_response = urlopen(omdb_url)
+                omdb_data = json.loads(omdb_response.read())
+                imdb_id = omdb_data['imdbID']
+                title = omdb_data['Title']
+                year = omdb_data['Year']
+                rated = omdb_data["Rated"]
+                release_date = omdb_data['Released']
+                runtime = omdb_data['Runtime']
+                genre = omdb_data['Genre']
+                plot = omdb_data['Plot']
+                language = omdb_data['Language']
+                country = omdb_data['Country']
+                poster_url = omdb_data['Poster']
                 # get local copy of image at poster_url
                 # get name of image0
                 img_name = (poster_url.split('/'))[-1]
                 poster_loc = "../static/movie_posters/" + img_name
                 # save the image locally
+                # try:
+                #     urlretrieve(poster_url, poster_loc)
+                # except IOError as err:
+                #     print poster_url + " is not an available image."
+                #     print err
+                #     continue
+
+                # Get Guidebox ID for future API calls to get streaming data
+                guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
+                guidebox_response = urlopen(guidebox_url)
+                guidebox_data = json.loads(guidebox_response.read())
                 try:
-                    urlretrieve(poster_url, poster_loc)
-                except IOError as err:
-                    print poster_url + " is not an available image."
-                    print err
-                    continue
+                    guidebox_id = str(guidebox_data['id'])
+                except KeyError:
+                    print imdb_id
+                    guidebox_id = '0'
 
                 print_line = imdb_id + '|' \
+                             + guidebox_id + '|' \
                              + title + '|' \
                              + year + '|' \
                              + rated + '|' \
+                             + release_date + '|' \
                              + runtime + '|' \
                              + genre + '|' \
                              + plot + '|' \
@@ -89,7 +106,7 @@ def get_movie_info(in_file, out_file):
                              + poster_url + '|' \
                              + poster_loc + '|' \
                              + imdb_url + '|' \
-                             + omdb_url
+                             + omdb_url + '\n'
 
                 movies_file.write(print_line)
 
@@ -122,11 +139,12 @@ def get_movie_json(in_file, out_file):
             fixture_file.write("[\n")
             # unpack the field names from the movie_info file
             for line in movies_file:
-                imdb_id, title, year, rated, release_date, runtime, genre, plot, language, country, poster_url, poster_loc, imdb_url, omdb_url = line.split('|')
+                imdb_id, guidebox_id, title, year, rated, release_date, runtime, genre, plot, language, country, poster_url, poster_loc, imdb_url, omdb_url = line.split('|')
                 fixture_file.write('\t{\n')
                 fixture_file.write('\t\t"model": "movies.movie",\n')
                 fixture_file.write('\t\t"pk": "' + imdb_id + '",\n')
                 fixture_file.write('\t\t"fields": {\n')
+                fixture_file.write('\t\t\t"guidebox_id": "' + guidebox_id + '",\n')
                 fixture_file.write('\t\t\t"title": "' + title + '",\n')
                 # year string needs to be datetime object, as string
                 year = datetime.datetime.strptime(year, '%Y').date()
@@ -138,7 +156,7 @@ def get_movie_json(in_file, out_file):
                 fixture_file.write('\t\t\t"release_date": "' + date_str + '",\n')
                 fixture_file.write('\t\t\t"runtime": "' + runtime + '",\n')
                 fixture_file.write('\t\t\t"genre": "' + genre + '",\n')
-                fixture_file.write('\t\t\t"plot": "' + plot + '",\n')
+                fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'") + '",\n')
                 fixture_file.write('\t\t\t"language": "' + language + '",\n')
                 fixture_file.write('\t\t\t"country": "' + country + '",\n')
                 fixture_file.write('\t\t\t"poster_url": "' + poster_url + '",\n')
@@ -148,3 +166,15 @@ def get_movie_json(in_file, out_file):
                 fixture_file.write('\t\t}\n')
                 fixture_file.write('\t},\n')
             fixture_file.write("]\n")
+
+
+def guidebox_import(guidebox_id):
+    if guidebox_id == '0':
+        return None
+    else:
+        # Get Guidebox ID for future API calls to get streaming data
+        guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/movie/" + guidebox_id
+        guidebox_response = urlopen(guidebox_url)
+        guidebox_data = json.loads(guidebox_response.read())
+
+        return guidebox_data
