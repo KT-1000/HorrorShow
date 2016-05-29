@@ -32,6 +32,7 @@
                         </div>
                         <input type="submit" class="btn btn-default">
                     </form>
+                    {% if not user.is_authenticated %}
                     <li><p class="navbar-text">Login to create your own collection!</p></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -39,28 +40,25 @@
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="social-buttons">
-                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                        </div>
-                                         <form class="form" role="form" method="post" action="user_login" accept-charset="UTF-8" id="login-nav">
-                                                <div class="form-group">
-                                                     <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                                     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                                </div>
-                                                <div class="form-group">
-                                                     <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                                     <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                                </div>
-                                                <div class="form-group">
-                                                     <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                                </div>
-                                                <div class="checkbox">
-                                                     <label>
-                                                     <input type="checkbox"> keep me logged-in
-                                                     </label>
-                                                </div>
+                                         <form class="form" role="form" method="post" action="{% url 'user_login' %}" accept-charset="UTF-8" id="user_login" name="user_login">
+                                             {% csrf_token %}
+                                            <div class="form-group">
+                                                 <label class="sr-only" for="exampleInputEmail2">Username</label>
+                                                 <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                                            </div>
+                                            <div class="form-group">
+                                                 <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                 <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                                                 <div class="help-block text-right"><a href="">Forget your password?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                 <label>
+                                                 <input type="checkbox"> keep me logged-in
+                                                 </label>
+                                            </div>
                                          </form>
                                     </div>
                                     <div class="bottom text-center">
@@ -70,6 +68,20 @@
                             </li>
                         </ul>
                     </li>
+                    {% else %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>{{ user.username }}</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="bottom text-center">
+                                        <a href="{% url 'user_logout' %}"><b>Logout</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    {% endif %}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
