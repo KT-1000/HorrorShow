@@ -3,8 +3,8 @@
 20160528 ~ Guidebox API integration
 20160528 ~ Fix poster image paths to use URL rather than directory structure
 20160529 ~ Login "authentication"
-Collection creation ability
-Dashboard with user's collections and movies
+20160529 ~ Collection creation ability
+20160529 ~ Dashboard with user's collections and movies
 Pagination for movies and collections and search results
 Populate db with ALL horror movies on IMDb
 Tests

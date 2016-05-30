@@ -2,6 +2,7 @@ from django.template import loader
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.models import User
 from .models import Collection, Movie
 from django.shortcuts import get_object_or_404, redirect, render
 from watson import search as watson
@@ -122,6 +123,8 @@ def create_collection(request):
         if form.is_valid():
             # grab the model object but don't yet commit
             model_instance = form.save(commit=False)
+            # make sure the user is saved along with their form
+            model_instance.user = request.user
             # save the new model object
             model_instance.save()
             # since the new collection exists,
@@ -134,6 +137,18 @@ def create_collection(request):
         form = CollectionForm()
 
         return render(request, "movies/create_collection.html", {'form': form})
+
+
+@login_required(login_url='user_login')
+def user_collections(request):
+    """ Takes http request, renders the page containing collections a user has created. """
+    user_collections = Collection.objects.filter(user=request.user)
+    template = loader.get_template('movies/user_collections.html')
+    context = {
+        'user_collections': user_collections,
+    }
+
+    return HttpResponse(template.render(context, request))
 
 
 def guidebox_import(request):

@@ -13,6 +13,7 @@ urlpatterns = [
     # user session URLs
     url(r'^user_login', views.user_login, name='user_login'),
     url(r'^user_logout', views.user_logout, name='user_logout'),
+    url(r'^user_collections', views.user_collections, name='user_collections'),
     # data import URLs
     url(r'^guidebox_import', views.guidebox_import, name='guidebox_import'),
     url(r'^omdb_import', views.omdb_import, name='omdb_import'),

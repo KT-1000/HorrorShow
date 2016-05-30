@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.contrib.postgres.fields import JSONField
+from django.contrib.auth.models import User
 
 
 class MovieManager(models.Manager):
@@ -91,7 +92,7 @@ class Movie(models.Model):
 class CollectionManager(models.Manager):
     """ Provides methods to manage cretion of collections. """
     # to make a collection, collection = Collection.objects.create_collection(<params>)
-    def create_collection(self, title, description, max_size, creation_date, movies):
+    def create_collection(self, title, description, max_size, creation_date, movies, user):
         """ Make an instance of the colleciton class.
             Takes in title, description, max_size, creation_date, movies
             Returns the Collection object created.
@@ -100,7 +101,8 @@ class CollectionManager(models.Manager):
                                  description=description,
                                  max_size=max_size,
                                  creation_date=creation_date,
-                                 movies=movies)
+                                 movies=movies,
+                                 user=user)
 
         return collection
 
@@ -112,6 +114,7 @@ class Collection(models.Model):
     max_size = models.SmallIntegerField(default=25)
     creation_date = models.DateField(null=True, blank=True)
     movies = models.ManyToManyField(Movie)
+    user = models.ForeignKey(User, null=True, blank=True)
 
     objects = CollectionManager()
 

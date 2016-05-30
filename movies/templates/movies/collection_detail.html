@@ -2,6 +2,7 @@
 {% block content %}
     <div class="row">
         <h3>{{ collection.title }}</h3>
+        <h5>{{ collection.user }}</h5>
         {% for movie in collection.movies.all %}
             <div class="col-md-2">
             <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
