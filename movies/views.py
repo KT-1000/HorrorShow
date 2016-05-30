@@ -3,9 +3,10 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, logout, authenticate
 from .models import Collection, Movie
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from watson import search as watson
 from fixtures import data_import as di
+from movies.forms import CollectionForm
 
 
 def index(request):
@@ -113,10 +114,26 @@ def collection_detail(request, collection_id):
     return HttpResponse(template.render(context, request))
 
 
-@login_required(login_url='/login/')
+@login_required(login_url='user_login')
 def create_collection(request):
     """ Takes http request, renders the page containing the form to create collections. """
-    pass
+    if request.method == "POST":
+        form = CollectionForm(request.POST)
+        if form.is_valid():
+            # grab the model object but don't yet commit
+            model_instance = form.save(commit=False)
+            # save the new model object
+            model_instance.save()
+            # since the new collection exists,
+            # the many-to-many movies field can be saved
+            form.save_m2m()
+            return redirect('/HorrorShow')
+
+    else:
+
+        form = CollectionForm()
+
+        return render(request, "movies/create_collection.html", {'form': form})
 
 
 def guidebox_import(request):

@@ -1,0 +1,8 @@
+{% extends 'movies/base.html' %}
+{% block content %}
+    <form class="form" role="form" method="post" action="{% url 'create_collection' %}" accept-charset="UTF-8" id="create_collection" name="create_collection">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" class="btn btn-default">
+    </form>
+{% endblock %}
