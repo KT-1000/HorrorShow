@@ -7,7 +7,7 @@ import codecs
 from HorrorShow import settings
 
 
-def get_imdb_urls():
+def get_imdb_urls(out_file):
     """ Create list of imdb_urls to use in get_movie_ids function. """
     # url pattern for all imdb horror results is: http://www.imdb.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start=n
     # where n starts at 1 and counts up by 50, with 19,696 results total
@@ -15,17 +15,19 @@ def get_imdb_urls():
     imdb_base = "http://www.imdb.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start="
     # initial value for
     start = 1
-    end = 19696
-    cur_start = start
 
-    while start <= end:
+    while len(imdb_urls) <= 394:
         imdb_url = imdb_base + str(start)
-        imdb_urls.append(imdb_urls)
+        imdb_urls.append(imdb_url)
+        start = int(start)
+        start += 50
 
-    return imdb_urls
+    with open(out_file, 'w') as url_file:
+        for url in imdb_urls:
+            url_file.write(url + '\n')
 
 
-def get_movie_ids(out_file, imdb_urls):
+def get_movie_ids(in_file, out_file):
     """ Get movie information from IMDb to seed horrorshow database.
         Takes out_file, the location of a text file to which imdb_ids will be written, and imdb_urls created by get_imdb_urls function.
         For each URL in the list, open that URL,
@@ -36,20 +38,20 @@ def get_movie_ids(out_file, imdb_urls):
     """
     # list of imdb id numbers to pass
     imdb_ids = []
+    with open(in_file, 'r') as urls_file:
+        for url in urls_file:
+            # Get html from URL
+            html = urlopen(url)
+            soup = BeautifulSoup(html, 'html.parser')
 
-    for url in imdb_urls:
-        # Get html from URL
-        html = urlopen(url)
-        soup = BeautifulSoup(html, 'html.parser')
-
-        with open(out_file, 'w') as cur_file:
-            for link in soup.find_all('a', href=True):
-                # get only links containing imdb id of result movies
-                if '/title/tt' in link['href'] and 'vote' not in link['href']:
-                    # only need movie id
-                    imdb_id = (link['href'].split('/'))[2]
-                    # append imdb id number to imdb_ids list, which will be returned
-                    imdb_ids.append(imdb_id)
+            with open(out_file, 'w') as cur_file:
+                for link in soup.find_all('a', href=True):
+                    # get only links containing imdb id of result movies
+                    if '/title/tt' in link['href'] and 'vote' not in link['href']:
+                        # only need movie id
+                        imdb_id = (link['href'].split('/'))[2]
+                        # append imdb id number to imdb_ids list, which will be returned
+                        imdb_ids.append(imdb_id)
 
             # only want one of each id, so make our array a set
             imdb_ids = set(imdb_ids)
@@ -63,8 +65,8 @@ def get_movie_info(in_file, out_file):
         information about that movie and write to out_file.
     """
     # open up the ouput file to hold movie data
-    with codecs.open(out_file,'w',encoding='utf8') as movies_file:
-        with codecs.open(in_file,'r',encoding='utf8') as ids_file:
+    with codecs.open(out_file, 'w', encoding='utf8') as movies_file:
+        with codecs.open(in_file, 'r', encoding='utf8') as ids_file:
             for imdb_id in ids_file:
                 if imdb_id in ids_file:
                     continue
