@@ -2,16 +2,20 @@
 {% block content %}
     <div class="row">
         <h3>{{ collection.title }}</h3>
-        <h5>{{ collection.user }}</h5>
+        <h5>created by {{ collection.user }}</h5>
+        <p>{{ collection.decription }}</p>
         {% for movie in collection.movies.all %}
             <div class="col-md-2">
             <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                {% if movie.guidebox_id != '0' %}
+                <img class="img-responsive" src={{ movie.guidebox_data.poster_120x171 }}>
+                {% else %}
                 <img class="img-responsive" src={{ movie.poster_loc }}>
+                {% endif %}
             </a>
             <h3>
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
             </h3>
-            <p>{{ movie.plot }}</p>
             </div>
         {% endfor %}
     </div>

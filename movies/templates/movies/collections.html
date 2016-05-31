@@ -1,21 +1,22 @@
 {% extends 'movies/base.html' %}
 {% block content %}
     {% for collection in collections %}
-        <div>
-            <h3>{{ collection.title }}</h3>
-            {% for movie in collection.movies.all %}
-            <span>
-            <a href="{{ movie.imdb_url }}" target="_blank">
-                <img src={{ movie.poster_loc }}>
-            </a>
-            </span>
-            <span>
-            <h3>
-                <a href="{{ movie.imdb_url }}" target="_blank">{{ movie.title }}</a>
-            </h3>
-            <p>{{ movie.plot }}</p>
-            </span>
-            {% endfor %}
-        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3><a href="{% url 'collection_detail' collection.id %}">{{ collection.title }}</a></h3>
+                    <p>{{ collection.user }}</p>
+                </div>
+                {% for movie in collection.movies.all %}
+                <div class="col-lg-2 col-md-2 col-xs-3 thumb">
+                    <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                        {% if movie.guidebox_id != '0' %}
+                        <img src={{ movie.guidebox_data.poster_120x171 }}>
+                        {% else %}
+                        <img src="{{ movie.poster_loc }}" height="171" width="120">
+                        {% endif %}
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
     {% endfor %}
 {% endblock %}
