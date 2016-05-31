@@ -5,6 +5,7 @@ import json
 import datetime
 import codecs
 from HorrorShow import settings
+from time import sleep
 
 
 def get_imdb_urls(out_file):
@@ -44,20 +45,21 @@ def get_movie_ids(in_file, out_file):
             html = urlopen(url)
             soup = BeautifulSoup(html, 'html.parser')
 
-            with open(out_file, 'w') as cur_file:
-                for link in soup.find_all('a', href=True):
-                    # get only links containing imdb id of result movies
-                    if '/title/tt' in link['href'] and 'vote' not in link['href']:
-                        # only need movie id
-                        imdb_id = (link['href'].split('/'))[2]
-                        # append imdb id number to imdb_ids list, which will be returned
-                        imdb_ids.append(imdb_id)
+            for link in soup.find_all('a', href=True):
+                # get only links containing imdb id of result movies
+                if '/title/tt' in link['href'] and 'vote' not in link['href']:
+                    # only need movie id
+                    imdb_id = (link['href'].split('/'))[2]
+                    # append imdb id number to imdb_ids list, which will be returned
+                    imdb_ids.append(imdb_id)
 
-            # only want one of each id, so make our array a set
-            imdb_ids = set(imdb_ids)
-            # write imdb id to file so we can read the file as an alternative to scraping IMDb directly in the future.
-            for imdb_id in imdb_ids:
-                cur_file.write(imdb_id + '\n')
+            with open(out_file, 'w') as cur_file:
+                ids = set(imdb_ids)
+                # write imdb id to file so we can read the file as an alternative to scraping IMDb directly in the future.
+                for item in ids:
+                    cur_file.write(item + '\n')
+
+            sleep(1)
 
 
 def get_movie_info(in_file, out_file):
@@ -68,66 +70,63 @@ def get_movie_info(in_file, out_file):
     with codecs.open(out_file, 'w', encoding='utf8') as movies_file:
         with codecs.open(in_file, 'r', encoding='utf8') as ids_file:
             for imdb_id in ids_file:
-                if imdb_id in ids_file:
+                imdb_id = imdb_id.strip()
+
+                imdb_url = "http://www.imdb.com/title/" + imdb_id
+
+                # OMDb API returns JSON
+                # http://www.omdbapi.com/?i=tt1974419&plot=full&r=json
+                omdb_url = "http://www.omdbapi.com/?i=" + imdb_id + "&plot=full&r=json"
+                omdb_response = urlopen(omdb_url)
+                omdb_data = json.loads(omdb_response.read())
+                imdb_id = omdb_data['imdbID']
+                title = omdb_data['Title']
+                year = omdb_data['Year']
+                rated = omdb_data["Rated"]
+                release_date = omdb_data['Released']
+                runtime = omdb_data['Runtime']
+                genre = omdb_data['Genre']
+                plot = omdb_data['Plot']
+                language = omdb_data['Language']
+                country = omdb_data['Country']
+                poster_url = omdb_data['Poster']
+                # get local copy of image at poster_url
+                # get name of image
+                img_name = (poster_url.split('/'))[-1]
+                poster_loc = "../static/movie_posters/" + img_name
+                # save the image locally
+                try:
+                    urlretrieve(poster_url, poster_loc)
+                except IOError as err:
+                    print poster_url + " is not an available image."
+                    print err
                     continue
-                else:
-                    imdb_id = imdb_id.strip()
 
-                    imdb_url = "http://www.imdb.com/title/" + imdb_id
+                # Get Guidebox ID for future API calls to get streaming data
+                guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
+                guidebox_response = urlopen(guidebox_url)
+                guidebox_data = json.loads(guidebox_response.read())
+                try:
+                    guidebox_id = str(guidebox_data['id'])
+                except KeyError:
+                    print imdb_id
+                    guidebox_id = '0'
 
-                    # OMDb API returns JSON
-                    # http://www.omdbapi.com/?i=tt1974419&plot=full&r=json
-                    omdb_url = "http://www.omdbapi.com/?i=" + imdb_id + "&plot=full&r=json"
-                    omdb_response = urlopen(omdb_url)
-                    omdb_data = json.loads(omdb_response.read())
-                    imdb_id = omdb_data['imdbID']
-                    title = omdb_data['Title']
-                    year = omdb_data['Year']
-                    rated = omdb_data["Rated"]
-                    release_date = omdb_data['Released']
-                    runtime = omdb_data['Runtime']
-                    genre = omdb_data['Genre']
-                    plot = omdb_data['Plot']
-                    language = omdb_data['Language']
-                    country = omdb_data['Country']
-                    poster_url = omdb_data['Poster']
-                    # get local copy of image at poster_url
-                    # get name of image
-                    img_name = (poster_url.split('/'))[-1]
-                    poster_loc = "../static/movie_posters/" + img_name
-                    # save the image locally
-                    try:
-                        urlretrieve(poster_url, poster_loc)
-                    except IOError as err:
-                        print poster_url + " is not an available image."
-                        print err
-                        continue
-
-                    # Get Guidebox ID for future API calls to get streaming data
-                    guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
-                    guidebox_response = urlopen(guidebox_url)
-                    guidebox_data = json.loads(guidebox_response.read())
-                    try:
-                        guidebox_id = str(guidebox_data['id'])
-                    except KeyError:
-                        print imdb_id
-                        guidebox_id = '0'
-
-                    print_line = imdb_id + '|' \
-                                 + guidebox_id + '|' \
-                                 + title + '|' \
-                                 + year + '|' \
-                                 + rated + '|' \
-                                 + release_date + '|' \
-                                 + runtime + '|' \
-                                 + genre + '|' \
-                                 + plot + '|' \
-                                 + language + '|' \
-                                 + country + '|' \
-                                 + poster_url + '|' \
-                                 + poster_loc + '|' \
-                                 + imdb_url + '|' \
-                                 + omdb_url + '\n'
+                print_line = imdb_id + '|' \
+                             + guidebox_id + '|' \
+                             + title + '|' \
+                             + year + '|' \
+                             + rated + '|' \
+                             + release_date + '|' \
+                             + runtime + '|' \
+                             + genre + '|' \
+                             + plot + '|' \
+                             + language + '|' \
+                             + country + '|' \
+                             + poster_url + '|' \
+                             + poster_loc + '|' \
+                             + imdb_url + '|' \
+                             + omdb_url + '\n'
 
                 movies_file.write(print_line)
 

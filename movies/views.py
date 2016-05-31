@@ -164,8 +164,8 @@ def guidebox_import(request):
 def omdb_import(request):
     """"""
     # di.get_imdb_urls("movies/fixtures/imdb_urls.txt")
-    di.get_movie_ids("movies/fixtures/imdb_urls.txt", "movies/fixtures/movie_ids.txt")
-    # di.get_movie_info("movies/fixtures/movie_ids.txt", "movies/fixtures/movie_info.txt")
+    # di.get_movie_ids("movies/fixtures/imdb_urls.txt", "movies/fixtures/movie_ids.txt")
+    di.get_movie_info("movies/fixtures/movie_ids.txt", "movies/fixtures/movie_info.txt")
     # di.get_movie_json("movies/fixtures/movie_info.txt", "movies/fixtures/movies.json")
 
     return redirect('/HorrorShow')
