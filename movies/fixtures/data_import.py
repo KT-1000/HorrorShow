@@ -10,10 +10,10 @@ from time import sleep
 
 def get_imdb_urls(out_file):
     """ Create list of imdb_urls to use in get_movie_ids function. """
-    # url pattern for all imdb horror results is: http://www.imdb.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start=n
+    # url pattern for all imdb.json horror results is: http://www.imdb.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start=n
     # where n starts at 1 and counts up by 50, with 19,696 results total
     imdb_urls = []
-    imdb_base = "http://www.imdb.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start="
+    imdb_base = "http://www.imdb.json.com/search/title?genres=horror&sort=moviemeter&title_type=feature&start="
     # initial value for
     start = 1
 
@@ -37,7 +37,7 @@ def get_movie_ids(in_file, out_file):
         and write it to the movies.json file.
         Return list of IMDb IDs.
     """
-    # list of imdb id numbers to pass
+    # list of imdb.json id numbers to pass
     imdb_ids = []
     with open(in_file, 'r') as urls_file:
         for url in urls_file:
@@ -46,16 +46,16 @@ def get_movie_ids(in_file, out_file):
             soup = BeautifulSoup(html, 'html.parser')
 
             for link in soup.find_all('a', href=True):
-                # get only links containing imdb id of result movies
+                # get only links containing imdb.json id of result movies
                 if '/title/tt' in link['href'] and 'vote' not in link['href']:
                     # only need movie id
                     imdb_id = (link['href'].split('/'))[2]
-                    # append imdb id number to imdb_ids list, which will be returned
+                    # append imdb.json id number to imdb_ids list, which will be returned
                     imdb_ids.append(imdb_id)
 
             with open(out_file, 'w') as cur_file:
                 ids = set(imdb_ids)
-                # write imdb id to file so we can read the file as an alternative to scraping IMDb directly in the future.
+                # write imdb.json id to file so we can read the file as an alternative to scraping IMDb directly in the future.
                 for item in ids:
                     cur_file.write(item + '\n')
 
@@ -72,7 +72,7 @@ def get_movie_info(in_file, out_file):
             for imdb_id in ids_file:
                 imdb_id = imdb_id.strip()
 
-                imdb_url = "http://www.imdb.com/title/" + imdb_id
+                imdb_url = "http://www.imdb.json.com/title/" + imdb_id
 
                 # OMDb API returns JSON
                 # http://www.omdbapi.com/?i=tt1974419&plot=full&r=json
@@ -103,7 +103,7 @@ def get_movie_info(in_file, out_file):
                     continue
 
                 # Get Guidebox ID for future API calls to get streaming data
-                guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
+                guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb.json/" + imdb_id
                 guidebox_response = urlopen(guidebox_url)
                 guidebox_data = json.loads(guidebox_response.read())
                 try:
