@@ -9,16 +9,15 @@
         <!-- /.row -->
     {% for movie in movies %}
         <div class="row">
-            <div class="col-md-7">
-                <a href="{{ movie.imdb_url }}" target="_blank">
-                    <img class="img-responsive" src="{{ movie.guidebox_data.poster_400x570 }}" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>{{ movie.title }}</h3>
-                <p>{{ movie.plot }}</p>
-                <a class="btn btn-primary" href="{% url 'movie_detail' imdb_id=movie.imdb_id %}">IMDb <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
+            <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                {% if movie.guidebox_id != '0' %}
+                <img class="img-fluid pull-left" src="{{ movie.guidebox_data.poster_240x342 }}" alt="">
+                {% else %}
+                <img class="img-fluid pull-left" src="{{ movie.poster_loc }}" alt="">
+                {% endif %}
+            </a>
+            <h3><a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}">{{ movie.title }}</a></h3>
+            <p>{{ movie.plot }}</p>
         </div>
     {% endfor %}
 {% endblock %}

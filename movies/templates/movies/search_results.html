@@ -6,9 +6,9 @@
     <div>
         {% for result in search_results %}
         {% if result.object|class_name == 'Movie' %}
-            <div><a href="{{ result.object.imdb_url }}">{{ result.object.title }}</a></div>
+            <div>Movie: <a href="{% url 'movie_detail' imdb_id=result.object.imdb_id %}">{{ result.object.title }}</a></div>
         {% elif result.object|class_name == 'Collection' %}
-            <div>{{ result.object.title }}: {{ result.object.description }}</div>
+            <div>Collection: <a href="{% url 'collection_detail' collection_id=result.object.id %}">{{ result.object.title }}</a></div>
         {% endif %}
         {% endfor %}
     </div>
