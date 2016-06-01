@@ -6,7 +6,7 @@
             <a href="{% url 'collection_detail' featured_collection.id %}" target="_blank">{{ featured_collection.title }}</a>
         </h3>
         {% for movie in featured_collection.movies.all %}
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4 col-xs 12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
                     {% if movie.guidebox_id != '0' %}
                     <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
@@ -17,7 +17,6 @@
                 <h3>
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
                 </h3>
-                <p>{{ movie.plot }}</p>
             </div>
         {% endfor %}
     </div><!-- .row -->
@@ -26,7 +25,7 @@
     <div class="row">
         <h3>New and Upcoming Movies:</h3>
         {% for movie in recent_movies %}
-            <div class="col-md-2">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
                     {% if movie.guidebox_id != '0' %}
                     <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
@@ -37,7 +36,6 @@
                 <h3>
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
                 </h3>
-                <p>{{ movie.plot }}</p>
             </div>
         {% endfor %}
     </div><!-- .row -->
