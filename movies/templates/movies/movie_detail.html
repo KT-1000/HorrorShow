@@ -1,9 +1,44 @@
 {% extends 'movies/base.html' %}
 {% block content %}
-    <div>
-        <img src={{ movie.poster_loc }}>
-        <h3>{{ movie.title }}</h3>
-        <p>{{ movie.plot }}</p>
-        <a href="{{ movie.imdb_url }}">IMDb</a>
+    <div class="row">
+        <div class="col-md-6">
+            {% if movie.guidebox_id != '0' %}
+                <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
+            {% else %}
+                <img class="img-responsive" src="{{ movie.poster_loc }}">
+            {% endif %}
+        </div>
+        <div class="col-md-6">
+            {% for trailer in movie.guidebox_data.trailers.web %}
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="{{ trailer.link }}"></iframe>
+            </div>
+            <p>Watch on:</p>
+                {% for purchase_source in movie.guidebox_data.purchase_web_sources %}
+                <a href="{{ purchase_source.link }}">{{ purchase_source.display_name }}</a><br>
+                {% endfor %}
+                {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <h3><a href="{{ movie.imdb_url }}">{{ movie.title }}</a></h3>
+        <p>{{ movie.guidebox_data.overview }}</p>
+        <p><a href="{{ movie.imdb_url }}">IMDb</a></p>
+        {% if movie.guidebox_data != '0' %}
+        <ul>
+            <li>Directed by
+            {% for director in movie.guidebox_data.directors %}
+                {{ director.name }}
+            </li>
+            {% endfor %}
+            <li>Written by
+            {% for writer in movie.guidebox_data.writers %}
+                {{ writer.name }}
+            </li>
+            {% endfor %}
+            <li>Rating: {{ movie.guidebox_data.rating }}</li>
+            <li>Release Date: {{ movie.guidebox_data.release_date }}</li>
+        </ul>
+        {% endif %}
     </div>
 {% endblock %}

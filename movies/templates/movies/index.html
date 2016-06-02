@@ -9,9 +9,9 @@
             <div class="col-md-2 col-sm-4 col-xs 12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
                     {% if movie.guidebox_id != '0' %}
-                    <img class="img-responsive" src={{ movie.guidebox_data.poster_240x342 }}>
+                    <img class="img-responsive" src={{ movie.guidebox_data.poster_120x171 }}>
                     {% else %}
-                    <img class="img-responsive" src="{{ movie.poster_loc }}">
+                    <img class="img-responsive" src="{{ movie.poster_loc }}" height="171" width="120">
                     {% endif %}
                 </a>
                 <h3>
@@ -25,13 +25,9 @@
     <div class="row">
         <h3>New and Upcoming Movies:</h3>
         {% for movie in recent_movies %}
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-2 col-sm-4 col-xs 12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                    {% if movie.guidebox_id != '0' %}
-                    <img class="img-responsive" src={{ movie.guidebox_data.poster_240x342 }}>
-                    {% else %}
-                    <img class="img-responsive" src={{ movie.poster_loc }}>
-                    {% endif %}
+                    <img class="img-responsive" src={{ movie.guidebox_data.poster_120x171 }}>
                 </a>
                 <h3>
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>

@@ -6,18 +6,13 @@
             <h1 class="page-header">Movies</h1>
         </div>
     </div>
-        <!-- /.row -->
+    <!-- /.row -->
     {% for movie in movies %}
-        <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs 12">
             <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                {% if movie.guidebox_id != '0' %}
-                <img class="img-fluid pull-left" src="{{ movie.guidebox_data.poster_240x342 }}" alt="">
-                {% else %}
-                <img class="img-fluid pull-left" src="{{ movie.poster_loc }}" alt="">
-                {% endif %}
+                <img class="img-fluid" src="{{ movie.guidebox_data.poster_120x171 }}" alt="">
             </a>
             <h3><a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}">{{ movie.title }}</a></h3>
-            <p>{{ movie.plot }}</p>
         </div>
     {% endfor %}
 {% endblock %}

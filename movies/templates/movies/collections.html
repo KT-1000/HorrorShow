@@ -3,8 +3,8 @@
     {% for collection in collections %}
             <div class="row">
                 <div class="col-lg-12">
-                    <h3><a href="{% url 'collection_detail' collection.id %}">{{ collection.title }}</a></h3>
-                    <p>{{ collection.user }}</p>
+                    <h3><a href="{% url 'collection_detail' collection.id %}">{{ collection.title }}</a> </h3>
+                    <h5>Created by {{ collection.user }}</h5>
                 </div>
                 {% for movie in collection.movies.all %}
                 <div class="col-lg-2 col-md-4 col-xs-6 thumb">
