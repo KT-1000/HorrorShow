@@ -10,7 +10,11 @@
     {% for movie in movies %}
         <div class="col-md-2 col-sm-4 col-xs 12">
             <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                <img class="img-fluid" src="{{ movie.guidebox_data.poster_120x171 }}" alt="">
+                {% if movie.has_poster != False %}
+                    <img class="img-responsive" src="../../static/movie_posters/{{ poster_name }}">
+                {% else %}
+                    <img class="img-responsive" src="../../static/images/horrorshow.jpg">
+                {% endif %}
             </a>
             <h3><a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}">{{ movie.title }}</a></h3>
         </div>

@@ -2,11 +2,11 @@
 {% block content %}
     <div class="row">
         <div class="col-md-6">
-            {% if movie.guidebox_id != '0' %}
-                <img class="img-responsive" src={{ movie.guidebox_data.poster_400x570 }}>
-            {% else %}
-                <img class="img-responsive" src="{{ movie.poster_loc }}">
-            {% endif %}
+                {% if movie.has_poster != False %}
+                <img class="img-responsive" src="../../static/movie_posters/{{ poster_name }}">
+                {% else %}
+                <img class="img-responsive" src="../../static/images/horrorshow.jpg">
+                {% endif %}
         </div>
         <div class="col-md-6">
             {% for trailer in movie.guidebox_data.trailers.web %}

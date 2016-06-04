@@ -9,11 +9,11 @@
                 {% for movie in collection.movies.all %}
                 <div class="col-lg-2 col-md-4 col-xs-6 thumb">
                     <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                        {% if movie.guidebox_id != '0' %}
-                        <img src={{ movie.guidebox_data.poster_120x171 }}>
-                        {% else %}
-                        <img src="{{ movie.poster_loc }}" height="171" width="120">
-                        {% endif %}
+                    {% if movie.has_poster != False %}
+                    <img class="img-responsive" src="../../static/movie_posters/{{ poster_name }}">
+                    {% else %}
+                    <img class="img-responsive" src="../../static/images/horrorshow.jpg">
+                    {% endif %}
                     </a>
                 </div>
                 {% endfor %}
