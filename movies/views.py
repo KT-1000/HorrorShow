@@ -133,7 +133,6 @@ def create_collection(request):
             return redirect('/HorrorShow')
 
         else:
-            form = CollectionForm()
 
             return render(request, "movies/create_collection.html", {'form': form})
 
