@@ -78,10 +78,11 @@ class Movie(models.Model):
     language = models.CharField(max_length=100, blank=True)
     country = models.CharField(max_length=100, blank=True)
     poster_url = models.URLField(max_length=500, blank=True)
-    poster_loc = models.CharField(max_length=500, blank=True)
+    poster_name = models.CharField(max_length=100, blank=True)
     imdb_url = models.URLField(max_length=500)
     omdb_url = models.URLField(max_length=500)
     guidebox_data = JSONField(null=True, blank=True)
+    has_poster = models.NullBooleanField(null=True, blank=True)
 
     objects = MovieManager()
 
