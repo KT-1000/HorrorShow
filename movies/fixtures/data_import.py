@@ -118,7 +118,10 @@ def get_movie_info(in_file, out_file):
                         full_path = dir_name + poster_name
                         if not os.path.exists(full_path):
                             urlretrieve(poster_url, dir_name + poster_name)
-                            has_poster = True
+                        else:
+                            # meter our requests
+                            sleep(1)
+                        has_poster = True
                     except IOError as err:
                         has_poster = False
                         poster_name = ""
