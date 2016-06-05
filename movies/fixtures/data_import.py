@@ -46,21 +46,25 @@ def get_movie_ids(in_file, out_file):
             # list of imdb ids to pass
             imdb_ids = set()
 
-            for link in soup.find_all('a', href=True):
-                # get only links containing imdb.json id of result movies
-                if '/title/tt' in link['href'] and 'vote' not in link['href']:
-                    # only need movie id
-                    imdb_id = (link['href'].split('/'))[2]
-                    if imdb_id != "tt_indev":
-                        # append imdb.json id number to imdb_ids list, which will be returned
-                        imdb_ids.add(imdb_id)
+            try:
+                for link in soup.find_all('a', href=True):
+                    # get only links containing imdb.json id of result movies
+                    if '/title/tt' in link['href'] and 'vote' not in link['href']:
+                        # only need movie id
+                        imdb_id = (link['href'].split('/'))[2]
+                        if imdb_id != "tt_indev":
+                            # append imdb.json id number to imdb_ids list, which will be returned
+                            imdb_ids.add(imdb_id)
 
-            with open(out_file, 'a') as cur_file:
-                ids = set(imdb_ids)
-                derp = 27
-                # write imdb id to file so we can read the file as an alternative to scraping IMDb directly in the future.
-                for item in ids:
-                    cur_file.write(item + '\n')
+                with open(out_file, 'a') as cur_file:
+                    ids = set(imdb_ids)
+                    derp = 27
+                    # write imdb id to file so we can read the file as an alternative to scraping IMDb directly in the future.
+                    for item in ids:
+                        cur_file.write(item + '\n')
+
+            except Exception as e:
+                print e
 
 
 def get_imdb_ids(in_file, out_file):
