@@ -3,9 +3,9 @@
     <div class="row">
         <div class="col-md-6">
                 {% if movie.has_poster != False %}
-                <img class="img-responsive" src="../../static/movie_posters/{{ poster_name }}">
+                <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
                 {% else %}
-                <img class="img-responsive" src="../../static/images/horrorshow.jpg">
+                <img class="img-responsive" src="/static/images/horrorshow.jpg">
                 {% endif %}
         </div>
         <div class="col-md-6">

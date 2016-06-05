@@ -8,8 +8,8 @@
         {% for movie in featured_collection.movies.all %}
             <div class="col-md-2 col-sm-4 col-xs 12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                    {% if movie.has_poster != False %}
-                    <img class="img-responsive" src="/static/posters/{{ poster_name }}">
+                    {% if movie.has_poster %}
+                    <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
                     {% else %}
                     <img class="img-responsive" src="/static/images/horrorshow.jpg">
                     {% endif %}
@@ -28,7 +28,7 @@
             <div class="col-md-2 col-sm-4 col-xs 12">
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
                     {% if movie.has_poster %}
-                    <img class="img-responsive" src="/static/posters/{{ poster_name }}">
+                    <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
                     {% else %}
                     <img class="img-responsive" src="/static/images/horrorshow.jpg">
                     {% endif %}
