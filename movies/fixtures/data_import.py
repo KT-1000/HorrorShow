@@ -85,6 +85,7 @@ def get_movie_info(in_file, out_file):
     """ For each imdb_id in the imdb_ids list, query OMDb to get JSON object containing
         information about that movie and write to out_file.
     """
+    movie_count = 0
     # open up the ouput file to hold movie data
     with codecs.open(out_file, 'a', encoding='utf8') as movies_file:
         with codecs.open(in_file, 'r', encoding='utf8') as ids_file:
@@ -128,8 +129,7 @@ def get_movie_info(in_file, out_file):
                         has_poster = False
                         poster_name = ""
                         poster_url = ""
-                        print imdb_id + " caused: "
-                        print err
+                        print imdb_id + " caused: " + str(err)
 
 
                     # Get Guidebox ID for future API calls to get streaming data
@@ -141,8 +141,7 @@ def get_movie_info(in_file, out_file):
                         try:
                             guidebox_id = str(guidebox_data['id'])
                         except KeyError as err:
-                            print imdb_id + " errored on key: "
-                            print err
+                            print imdb_id + " errored on" + str(err)
                             guidebox_id = '0'
                     else:
                         guidebox_id = '0'
@@ -165,10 +164,13 @@ def get_movie_info(in_file, out_file):
                                  + str(has_poster) + '\n'
 
                     movies_file.write(print_line)
+                    movie_count += 1
+
+                    if movie_count % 100 == 0:
+                        print movie_count
 
                 except KeyError as err:
-                    print imdb_id + " caused: "
-                    print err
+                    print imdb_id + " caused " + str(err)
 
     return True
 
