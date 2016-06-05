@@ -114,8 +114,10 @@ def get_movie_info(in_file, out_file):
                         has_poster = True
                     except IOError as err:
                         has_poster = False
-                        print poster_url + "|" + str(err)
-                        continue
+                        poster_name = ""
+                        poster_url = ""
+                        print imdb_id + "|" + str(err)
+
 
                     # Get Guidebox ID for future API calls to get streaming data
                     # https://api-public.guidebox.com/v1.43/US/rKpZSpDchEEYZRL6LVI941ep3phbR4i7/search/movie/id/imdb/tt0420223
@@ -147,7 +149,7 @@ def get_movie_info(in_file, out_file):
 
                     movies_file.write(print_line)
 
-                    sleep(10)
+                    sleep(1)
 
                 except KeyError as err:
                     print imdb_id + "|" + str(err)
@@ -181,8 +183,8 @@ def get_movie_json(in_file, out_file):
         with codecs.open(in_file, 'r', encoding='utf8') as movies_file:
             fixture_file.write("[\n")
             # unpack the field names from the movie_info file
-            try:
-                for line in movies_file:
+            for line in movies_file:
+                try:
                     imdb_id, guidebox_id, title, year, rated, release_date, runtime, genre, plot, language, country, poster_url, poster_name, imdb_url, omdb_url, has_poster = line.split('|')
                     fixture_file.write('\t{\n')
                     fixture_file.write('\t\t"model": "movies.movie",\n')
@@ -210,12 +212,14 @@ def get_movie_json(in_file, out_file):
                     fixture_file.write('\t\t\t"has_poster": "' + has_poster.strip() + '"\n')
                     fixture_file.write('\t\t}\n')
                     fixture_file.write('\t},\n')
-                fixture_file.write("]\n")
 
-                sleep(1)
+                    sleep(1)
 
-            except ValueError as err:
-                print err
+                except ValueError as err:
+                    print err
+                    print line
+
+            fixture_file.write("]\n")
 
 
 
