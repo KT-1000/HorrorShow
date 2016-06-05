@@ -211,6 +211,8 @@ def get_movie_json(in_file, out_file):
                 fixture_file.write('\t},\n')
             fixture_file.write("]\n")
 
+            sleep(1)
+
 
 def guidebox_import(guidebox_id):
     if guidebox_id == '0':
