@@ -116,19 +116,24 @@ def get_movie_info(in_file, out_file):
                         has_poster = False
                         poster_name = ""
                         poster_url = ""
-                        print imdb_id + "|" + str(err)
+                        print imdb_id + " caused: "
+                        print err
 
 
                     # Get Guidebox ID for future API calls to get streaming data
                     # https://api-public.guidebox.com/v1.43/US/rKpZSpDchEEYZRL6LVI941ep3phbR4i7/search/movie/id/imdb/tt0420223
-                    guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
-                    guidebox_response = urlopen(guidebox_url)
-                    guidebox_data = json.loads(guidebox_response.read())
-                    try:
-                        guidebox_id = str(guidebox_data['id'])
-                    except KeyError as err:
-                        print imdb_id + "|" + str(err)
-                        guidebox_id = '0'
+                    if settings.GUIDEBOX_KEY:
+                        guidebox_url = "http://api-public.guidebox.com/v1.43/US/" + settings.GUIDEBOX_KEY + "/search/movie/id/imdb/" + imdb_id
+                        guidebox_response = urlopen(guidebox_url)
+                        guidebox_data = json.loads(guidebox_response.read())
+                        try:
+                            guidebox_id = str(guidebox_data['id'])
+                        except KeyError as err:
+                            print imdb_id + " caused: "
+                            print err
+                            guidebox_id = '0'
+                    else:
+                        return False
 
                     print_line = imdb_id + '|' \
                                  + guidebox_id + '|' \
@@ -152,8 +157,10 @@ def get_movie_info(in_file, out_file):
                     sleep(1)
 
                 except KeyError as err:
-                    print imdb_id + "|" + str(err)
-                    continue
+                    print imdb_id + " caused: "
+                    print err
+
+    return True
 
 
 def get_movie_json(in_file, out_file):
