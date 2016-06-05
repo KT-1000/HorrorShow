@@ -1,3 +1,4 @@
+import os
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from urllib import urlretrieve
@@ -85,6 +86,10 @@ def get_movie_info(in_file, out_file):
     # open up the ouput file to hold movie data
     with codecs.open(out_file, 'a', encoding='utf8') as movies_file:
         with codecs.open(in_file, 'r', encoding='utf8') as ids_file:
+            # make sure there's a directory to hold local copies of movie posters
+            dir_name = "./movies/static/posters/"
+            if not os.path.exists(dir_name):
+                os.mkdir(dir_name)
             for imdb_id in ids_file:
                 imdb_id = imdb_id.strip()
                 # if there's already a movie entry with that primary key, skip it
@@ -110,7 +115,7 @@ def get_movie_info(in_file, out_file):
                     poster_name = imdb_id + ".jpg"
                     # save the image locally
                     try:
-                        urlretrieve(poster_url, "./movies/static/posters/" + poster_name)
+                        urlretrieve(poster_url, dir_name + poster_name)
                         has_poster = True
                     except IOError as err:
                         has_poster = False
@@ -129,7 +134,7 @@ def get_movie_info(in_file, out_file):
                         try:
                             guidebox_id = str(guidebox_data['id'])
                         except KeyError as err:
-                            print imdb_id + " caused: "
+                            print imdb_id + " errored on key: "
                             print err
                             guidebox_id = '0'
                     else:
