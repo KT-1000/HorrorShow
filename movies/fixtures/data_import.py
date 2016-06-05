@@ -110,7 +110,7 @@ def get_movie_info(in_file, out_file):
                     poster_name = imdb_id + ".jpg"
                     # save the image locally
                     try:
-                        urlretrieve(poster_url, poster_name)
+                        urlretrieve(poster_url, "./movies/static/posters/" + poster_name)
                         has_poster = True
                     except IOError as err:
                         has_poster = False
@@ -153,8 +153,6 @@ def get_movie_info(in_file, out_file):
                                  + str(has_poster) + '\n'
 
                     movies_file.write(print_line)
-
-                    sleep(1)
 
                 except KeyError as err:
                     print imdb_id + " caused: "
@@ -227,7 +225,6 @@ def get_movie_json(in_file, out_file):
                     print line
 
             fixture_file.write("]\n")
-
 
 
 def guidebox_import(guidebox_id):
