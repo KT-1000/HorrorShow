@@ -115,8 +115,10 @@ def get_movie_info(in_file, out_file):
                     poster_name = imdb_id + ".jpg"
                     # save the image locally
                     try:
-                        urlretrieve(poster_url, dir_name + poster_name)
-                        has_poster = True
+                        full_path = dir_name + poster_name
+                        if not os.path.exists(full_path):
+                            urlretrieve(poster_url, dir_name + poster_name)
+                            has_poster = True
                     except IOError as err:
                         has_poster = False
                         poster_name = ""
