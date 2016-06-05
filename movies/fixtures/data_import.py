@@ -194,7 +194,7 @@ def get_movie_json(in_file, out_file):
          }
         ]
     """
-    with codecs.open(out_file, 'a', encoding='utf8') as fixture_file:
+    with codecs.open(out_file, 'w', encoding='utf8') as fixture_file:
         with codecs.open(in_file, 'r', encoding='utf8') as movies_file:
             fixture_file.write("[\n")
             # unpack the field names from the movie_info file
