@@ -133,7 +133,7 @@ def get_movie_info(in_file, out_file):
                             print err
                             guidebox_id = '0'
                     else:
-                        return False
+                        guidebox_data = '0'
 
                     print_line = imdb_id + '|' \
                                  + guidebox_id + '|' \
