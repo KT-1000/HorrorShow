@@ -84,3 +84,5 @@ ENV/
 
 # User-specific stuff:
 .idea/
+*.jpg
+*.png
