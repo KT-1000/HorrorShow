@@ -218,9 +218,9 @@ def get_movie_json(in_file, out_file):
     with codecs.open(out_file, 'a', encoding='utf8') as fixture_file:
         with codecs.open(in_file, 'r', encoding='utf8') as movies_file:
             fixture_file.write("[\n")
-            # unpack the field names from the movie_info file
             for line in movies_file:
                 try:
+                    # unpack the field names from the movie_info file
                     imdb_id, guidebox_id, title, year, rated, release_date, runtime, genre, plot, language, country, poster_url, poster_name, imdb_url, omdb_url, has_poster = line.split('|')
                     fixture_file.write('\t{\n')
                     fixture_file.write('\t\t"model": "movies.movie",\n')
@@ -242,7 +242,10 @@ def get_movie_json(in_file, out_file):
                     fixture_file.write('\t\t\t"release_date": "' + date_str + '",\n')
                     fixture_file.write('\t\t\t"runtime": "' + runtime + '",\n')
                     fixture_file.write('\t\t\t"genre": "' + genre + '",\n')
-                    fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'").encode('utf8') + '",\n')
+                    try:
+                        fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'").encode('utf8') + '",\n')
+                    except UnicodeEncodeError:
+                        fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'") + '",\n')
                     fixture_file.write('\t\t\t"language": "' + language + '",\n')
                     fixture_file.write('\t\t\t"country": "' + country + '",\n')
                     fixture_file.write('\t\t\t"poster_url": "' + poster_url + '",\n')
@@ -252,8 +255,6 @@ def get_movie_json(in_file, out_file):
                     fixture_file.write('\t\t\t"has_poster": "' + has_poster.strip() + '"\n')
                     fixture_file.write('\t\t}\n')
                     fixture_file.write('\t},\n')
-
-                    sleep(1)
 
                 except ValueError as err:
                     print err
