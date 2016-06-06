@@ -237,7 +237,7 @@ def get_movie_json(in_file, out_file):
                         date_obj = datetime.datetime.strptime(release_date, '%d %b %Y').date()
                     except ValueError:
                         year = str(year)
-                        date_obj = datetime.datetime.strptime(year + '-01-01', '%Y-%m-%d')
+                        date_obj = datetime.datetime.strptime(year, '%Y-%m-%d')
                     date_str = datetime.datetime.strftime(date_obj, '%Y-%m-%d')
                     fixture_file.write('\t\t\t"release_date": "' + date_str + '",\n')
                     fixture_file.write('\t\t\t"runtime": "' + runtime + '",\n')
