@@ -242,7 +242,7 @@ def get_movie_json(in_file, out_file):
                     fixture_file.write('\t\t\t"release_date": "' + date_str + '",\n')
                     fixture_file.write('\t\t\t"runtime": "' + runtime + '",\n')
                     fixture_file.write('\t\t\t"genre": "' + genre + '",\n')
-                    fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'") + '",\n')
+                    fixture_file.write('\t\t\t"plot": "' + plot.replace('"', "'").encode('utf8') + '",\n')
                     fixture_file.write('\t\t\t"language": "' + language + '",\n')
                     fixture_file.write('\t\t\t"country": "' + country + '",\n')
                     fixture_file.write('\t\t\t"poster_url": "' + poster_url + '",\n')
