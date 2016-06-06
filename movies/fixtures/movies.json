@@ -32933,3 +32933,234 @@
 			"has_poster": "True"
 		}
 	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0893532",
+		"fields": {
+			"guidebox_id": "39284",
+			"title": "Kill Theory",
+			"year": "2009-01-01",
+			"rated": "R",
+			"release_date": "2009-01-08",
+			"runtime": "85 min",
+			"genre": "Horror, Thriller",
+			"plot": "A group of college students visit a secluded vacation home to celebrate their upcoming graduation. The fun doesn't last long when a sadistic psychopath forces them to participate in his deadly contest. The rules are simple -- in order to survive they must kill each other. As tension builds, and relationships begin to crumble, they realize that only one can make it out alive. Could you trust your boyfriend? Your girlfriend? Your best friend? Only one can go home. So who will be the last man or woman standing?",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQ0MTQ1MDM2MF5BMl5BanBnXkFtZTcwMTI1MjQxMw@@._V1_SX300.jpg",
+			"poster_name": "tt0893532.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0893532",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0893532&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt3300506",
+		"fields": {
+			"guidebox_id": "0",
+			"title": "Trick 'r Treat 2",
+			"year": "2015-01-01",
+			"rated": "N/A",
+			"release_date": "2016-10-01",
+			"runtime": "N/A",
+			"genre": "Horror",
+			"plot": "N/A",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "",
+			"poster_name": "",
+			"imdb_url": "http://www.imdb.com/title/tt3300506",
+			"omdb_url": "http://www.omdbapi.com/?i=tt3300506&plot=full&r=json",
+			"has_poster": "False"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0084899",
+		"fields": {
+			"guidebox_id": "4197",
+			"title": "White Dog",
+			"year": "1982-01-01",
+			"rated": "PG",
+			"release_date": "1982-07-07",
+			"runtime": "90 min",
+			"genre": "Drama, Horror, Thriller",
+			"plot": "Deprogramming a dog who kills Blacks is the ultimate challenge for an unorthodox African-American trainer. When a young Hollywood actress finds the injured stray, she nurses it back to health, not knowing it's a 'White Dog' trained by a racist to attack only Blacks. Julie's appalled when the otherwise gentle, white German Shepherd breaks out, then returns from his nighttime foray dotted with human blood. Julie desperately races from trainer to trainer, advised to kill her pet, until the top Hollywood canine expert refers her to his former protégé, Keys.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTQxMDI1MjkyNF5BMl5BanBnXkFtZTcwNTQxNjM0Mg@@._V1_SX300.jpg",
+			"poster_name": "tt0084899.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0084899",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0084899&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt5639650",
+		"fields": {
+			"guidebox_id": "137011",
+			"title": "Phantom of the Theatre",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-04-29",
+			"runtime": "103 min",
+			"genre": "Fantasy, Horror, Mystery",
+			"plot": "A haunted theatre, filled with the vengeful spirits of a tragically-trapped performance troupe murdered in a fire 13 years ago, waits for the once-grand palatial playhouse to re-open with a new show - and bring in new victims.",
+			"language": "Mandarin",
+			"country": "China",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMzhiMDE4MTMtZDYxYi00ZDkxLTg4OGMtMTQ1ZWE0OWIwOGNhXkEyXkFqcGdeQXVyMTk0NTY2ODQ@._V1_SX300.jpg",
+			"poster_name": "tt5639650.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt5639650",
+			"omdb_url": "http://www.omdbapi.com/?i=tt5639650&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt2811690",
+		"fields": {
+			"guidebox_id": "0",
+			"title": "The Slender Man",
+			"year": "2013-01-01",
+			"rated": "N/A",
+			"release_date": "2013-02-18",
+			"runtime": "78 min",
+			"genre": "Horror",
+			"plot": "A tall, shadowy figure with a blank face and a suit is thought to be behind recent disappearances of children.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BNTEyNzZhMjktM2EzNC00ZWYyLTkxYzItNzYyYzliYmVmYzdiXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_SX300.jpg",
+			"poster_name": "tt2811690.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt2811690",
+			"omdb_url": "http://www.omdbapi.com/?i=tt2811690&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0046478",
+		"fields": {
+			"guidebox_id": "59581",
+			"title": "Ugetsu",
+			"year": "1953-01-01",
+			"rated": "APPROVED",
+			"release_date": "1954-09-07",
+			"runtime": "96 min",
+			"genre": "Drama, Horror, War",
+			"plot": "In the beginning of the springtime in the period of the Japanese Civil Wars of the Sixteenth Century in Lake Biwa in the Province of Omi, the family man farmer and craftsman Genjurô travels to Nagahama to sell his wares and makes a small fortune. His neighbor Tobei that is a fool man dreams on becoming a samurai, but he can not afford to buy the necessary outfit. The greedy Genjurô and Tobei work together manufacturing clay potteries, expecting to sell the pieces and enrich; however, their wives Miyage and Ohama are worried about the army of the cruel Shibata that is coming to their village and they warn their ambitious husbands. Their village is looted but the families flee and survive; Genjurô and Tobei decide to travel by boat with their wives and baby to sell the wares in a bigger town. When they meet another boat that was attacked by pirates, Genjurô decides to leave his wife and son on the bank of the river, promising to return in ten days. Genjurô, Tobei and Ohama raise a large amount but Tobei leaves his wife to buy the samurai outfit and seek fame and fortune. Meanwhile the female aristocratic Lady Wakasa and her servant ask Genjurô to bring her shopping to her fancy Kutsuki House. Sooner Genjurô and Tobei discover the price they have to pay for their ambition.",
+			"language": "Japanese",
+			"country": "Japan",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjE4NDE0OTI3NF5BMl5BanBnXkFtZTcwNjEyMTIzMQ@@._V1._CR15,24,325,474_SY132_CR1,0,89,132_AL_.jpg_V1_SX300.jpg",
+			"poster_name": "tt0046478.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0046478",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0046478&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0082497",
+		"fields": {
+			"guidebox_id": "61905",
+			"title": "The Hand",
+			"year": "1981-01-01",
+			"rated": "R",
+			"release_date": "1981-04-24",
+			"runtime": "104 min",
+			"genre": "Drama, Horror, Thriller",
+			"plot": "Jon Lansdale is a comic book artist who loses his right hand in a car accident. The hand was not found at the scene of the accident, but it soon returns by itself to follow Jon around, and murder those who anger him.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTI1NjQyODc1MF5BMl5BanBnXkFtZTcwNTA2ODA1MQ@@._V1_SX300.jpg",
+			"poster_name": "tt0082497.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0082497",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0082497&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt5108168",
+		"fields": {
+			"guidebox_id": "0",
+			"title": "Xp-573",
+			"year": "2016-01-01",
+			"rated": "N/A",
+			"release_date": "2016-08-02",
+			"runtime": "N/A",
+			"genre": "Action, Horror",
+			"plot": "N/A",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjI0OTA5MzY5M15BMl5BanBnXkFtZTgwNTgyNzIxNzE@._V1_SX300.jpg",
+			"poster_name": "tt5108168.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt5108168",
+			"omdb_url": "http://www.omdbapi.com/?i=tt5108168&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt2034176",
+		"fields": {
+			"guidebox_id": "0",
+			"title": "Zombie Apocalypse",
+			"year": "2017-01-01",
+			"rated": "N/A",
+			"release_date": "2017-01-01",
+			"runtime": "N/A",
+			"genre": "Action, Horror",
+			"plot": "A squad of eight Special Forces soldiers are assigned a suicide mission to rescue a scientist from a city ruled by the undead.",
+			"language": "English",
+			"country": "UK",
+			"poster_url": "",
+			"poster_name": "",
+			"imdb_url": "http://www.imdb.com/title/tt2034176",
+			"omdb_url": "http://www.omdbapi.com/?i=tt2034176&plot=full&r=json",
+			"has_poster": "False"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0094834",
+		"fields": {
+			"guidebox_id": "43604",
+			"title": "Cannibal Women in the Avocado Jungle of Death",
+			"year": "1989-01-01",
+			"rated": "PG-13",
+			"release_date": "1989-03-15",
+			"runtime": "90 min",
+			"genre": "Action, Comedy, Horror",
+			"plot": "The government hires a feminist at the local university to track down the Piranha Women living in the uncharted Avocado Jungle (westernmost outpost is San Bernardino) to convince them to move to a reservation condo in Malibu. She hires a guide at the edge of the jungle, a male chauvinist pig, and they have many arguments about men and women as they work their way in, and eventually confront the Piranha Women.",
+			"language": "English",
+			"country": "USA",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMTI2MTUxMzEzMF5BMl5BanBnXkFtZTcwMTM2MDIyMQ@@._V1_SX300.jpg",
+			"poster_name": "tt0094834.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0094834",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0094834&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
+	{
+		"model": "movies.movie",
+		"pk": "tt0099697",
+		"fields": {
+			"guidebox_id": "66854",
+			"title": "Graveyard Shift",
+			"year": "1990-01-01",
+			"rated": "R",
+			"release_date": "1990-10-26",
+			"runtime": "89 min",
+			"genre": "Horror",
+			"plot": "In a very old textile mill, with a serious rat infestation, the workers discover a horrifying secret deep in the basement.",
+			"language": "English",
+			"country": "USA, Japan",
+			"poster_url": "http://ia.media-imdb.com/images/M/MV5BMjA5MTA1MzcxNl5BMl5BanBnXkFtZTYwNTgzNjM5._V1_SX300.jpg",
+			"poster_name": "tt0099697.jpg",
+			"imdb_url": "http://www.imdb.com/title/tt0099697",
+			"omdb_url": "http://www.omdbapi.com/?i=tt0099697&plot=full&r=json",
+			"has_poster": "True"
+		}
+	},
