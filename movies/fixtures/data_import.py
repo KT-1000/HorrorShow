@@ -106,7 +106,7 @@ def get_movie_info(in_file, out_file):
                     # http://www.omdbapi.com/?i=tt1974419&plot=full&r=json
                     omdb_url = "http://www.omdbapi.com/?i=" + imdb_id + "&plot=full&r=json"
                     omdb_response = urlopen(omdb_url)
-                    omdb_data = json.loads(omdb_response.read())
+                    omdb_data = json.loads(omdb_response.read().replace('\r\n', ''))
                     imdb_id = omdb_data['imdbID']
                     title = omdb_data['Title']
                     year = omdb_data['Year']
@@ -182,7 +182,12 @@ def get_movie_info(in_file, out_file):
                         print movie_count
 
                 except KeyError as err:
+
                     print imdb_id + " caused " + str(err)
+
+                except ValueError as err:
+
+                    print imdb_id + " errored on " + str(err)
 
     return True
 
@@ -228,7 +233,11 @@ def get_movie_json(in_file, out_file):
                     fixture_file.write('\t\t\t"year": "' + str(year) + '",\n')
                     fixture_file.write('\t\t\t"rated": "' + rated + '",\n')
                     # format release date correctly
-                    date_obj = datetime.datetime.strptime(release_date, '%d %b %Y').date()
+                    try:
+                        date_obj = datetime.datetime.strptime(release_date, '%d %b %Y').date()
+                    except ValueError:
+                        year = str(year)
+                        date_obj = datetime.datetime.strptime(year + '-01-01', '%Y-%m-%d')
                     date_str = datetime.datetime.strftime(date_obj, '%Y-%m-%d')
                     fixture_file.write('\t\t\t"release_date": "' + date_str + '",\n')
                     fixture_file.write('\t\t\t"runtime": "' + runtime + '",\n')
