@@ -1,44 +1,81 @@
 {% extends 'movies/base.html' %}
 {% block content %}
     <div class="row">
-        <div class="col-md-6">
-                {% if movie.has_poster != False %}
+        <div class="col-lg-12">
+            <h1 class="page-header"><a href="{{ movie.imdb_url }}">{{ movie.title }}</a></h1>
+        </div>
+    </div><!-- /.row -->
+    {% if movie.guidebox_data != '0' %}
+        <div class="row">
+            <div class="col-md-6">
+                    {% if movie.has_poster %}
+                    <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
+                    {% else %}
+                    <img class="img-responsive" src="/static/images/horrorshow.jpg">
+                    {% endif %}
+            </div>
+            <div class="col-md-6">
+                {% for trailer in movie.guidebox_data.trailers.web %}
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="{{ trailer.link }}" height="1024" width="800"></iframe>
+                    </div>
+                    {% if movie.guidebox_data.purchase_web_sources %}
+                    <p>Watch on:</p>
+                        {% for purchase_source in movie.guidebox_data.purchase_web_sources %}
+                        <a href="{{ purchase_source.link }}">{{ purchase_source.display_name }}</a><br>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div><!-- .row holding movie poster, trailer and purchase info-->
+        <div class="row">
+            {% if movie.guidebox_data.overview %}
+                <p>{{ movie.guidebox_data.overview }}</p>
+            {% endif %}
+            {% if movie.imdb_url %}
+                <p><a href="{{ movie.imdb_url }}">IMDb</a></p>
+            {% endif %}
+            {% if movie.guidebox_data.director %}
+            <p>Directed by
+                {% for director in movie.guidebox_data.directors %}
+                    {{ director.name }}
+                {% endfor %}
+            {% endif %}
+            </p>
+            {% if movie.guidebox_data.writer %}
+            <p>Written by
+                {% for writer in movie.guidebox_data.writers %}
+                    {{ writer.name }}
+                {% endfor %}
+            </p>
+            {% endif %}
+            {% if movie.guidebox_data.rating %}
+                <p>Rated {{ movie.guidebox_data.rating }} </p>
+            {% endif %}
+            {% if movie.guidebox_data.rating %}
+                <p>Released {{ movie.guidebox_data.release_date }} </p>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-md-6">
+                {% if movie.has_poster %}
                 <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
                 {% else %}
                 <img class="img-responsive" src="/static/images/horrorshow.jpg">
                 {% endif %}
-        </div>
-        <div class="col-md-6">
-            {% for trailer in movie.guidebox_data.trailers.web %}
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="{{ trailer.link }}"></iframe>
             </div>
-            <p>Watch on:</p>
-                {% for purchase_source in movie.guidebox_data.purchase_web_sources %}
-                <a href="{{ purchase_source.link }}">{{ purchase_source.display_name }}</a><br>
-                {% endfor %}
-                {% endfor %}
+            <div class="col-md-6">
+                {% if movie.plot %}
+                    <div>{{ movie.plot }}</div>
+                {% endif %}
+                {% if movie.imdb_url %}
+                    <div><a href="{{ movie.imdb_url }}">IMDb</a></div>
+                {% endif %}
+                {% if movie.release_date %}
+                    <div>{{ movie.release_date }}</div>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <h3><a href="{{ movie.imdb_url }}">{{ movie.title }}</a></h3>
-        <p>{{ movie.guidebox_data.overview }}</p>
-        <p><a href="{{ movie.imdb_url }}">IMDb</a></p>
-        {% if movie.guidebox_data != '0' %}
-        <ul>
-            <li>Directed by
-            {% for director in movie.guidebox_data.directors %}
-                {{ director.name }}
-            </li>
-            {% endfor %}
-            <li>Written by
-            {% for writer in movie.guidebox_data.writers %}
-                {{ writer.name }}
-            </li>
-            {% endfor %}
-            <li>Rating: {{ movie.guidebox_data.rating }}</li>
-            <li>Release Date: {{ movie.guidebox_data.release_date }}</li>
-        </ul>
-        {% endif %}
-    </div>
+    {% endif %}
 {% endblock %}

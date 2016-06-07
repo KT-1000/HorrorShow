@@ -1,7 +1,24 @@
-.movie {
-    height: 180px;
-    overflow: hidden;
-    display: inline-block;
+.navbar-default {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.navbar-toggle {
+   margin: 23px 0;
+}
+
+.navbar-nav, .navbar-nav li, .navbar-nav li a {
+  height: 90px;
+  line-height: 80px;
+}
+
+.navbar-nav li a {
+  padding-top: 0;
+  padding-bottom:0;
+}
+
+.navbar-nav a img {
+    margin-top: -12px
 }
 
 #login-dp{
@@ -28,22 +45,7 @@
 #login-dp .form-group {
     margin-bottom: 10px;
 }
-.btn-fb{
-    color: #fff;
-    background-color:#3b5998;
-}
-.btn-fb:hover{
-    color: #fff;
-    background-color:#496ebc
-}
-.btn-tw{
-    color: #fff;
-    background-color:#55acee;
-}
-.btn-tw:hover{
-    color: #fff;
-    background-color:#59b5fa;
-}
+
 @media(max-width:768px){
     #login-dp{
         background-color: inherit;
@@ -53,4 +55,10 @@
         background-color: inherit;
         border-top:0 none;
     }
+}
+
+.movie {
+    height: 180px;
+    overflow: hidden;
+    display: inline-block;
 }

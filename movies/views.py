@@ -8,6 +8,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from watson import search as watson
 from fixtures import data_import as di
 from movies.forms import CollectionForm
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def index(request):
@@ -37,9 +38,24 @@ def search(request):
     """
     search_str = request.GET["user_search"]
     search_results = watson.search(search_str)
+    # Show 18 movies per page
+    paginator = Paginator(search_results, 24)
+
+    page = request.GET.get('page')
+
+    try:
+        results = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        results = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        results = paginator.page(paginator.num_pages)
+
     template = loader.get_template('movies/search_results.html')
+
     context = {
-        'search_results': search_results,
+        'results': results,
         'search_str': search_str,
     }
 
@@ -74,8 +90,23 @@ def user_logout(request):
 
 def movies(request):
     """ Takes in http request, renders all movies, ordered by release date, paginated. """
-    movies = Movie.objects.order_by('-release_date')
+    all_movies = Movie.objects.order_by('-release_date')
+    # Show 18 movies per page
+    paginator = Paginator(all_movies, 24)
+
+    page = request.GET.get('page')
+
+    try:
+        movies = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        movies = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        movies = paginator.page(paginator.num_pages)
+
     template = loader.get_template('movies/movies.html')
+
     context = {
         'movies': movies,
     }
@@ -146,8 +177,23 @@ def create_collection(request):
 @login_required(login_url='user_login')
 def user_collections(request):
     """ Takes http request, renders the page containing collections a user has created. """
-    user_collections = Collection.objects.filter(user=request.user)
+    all_user_collections = Collection.objects.filter(user=request.user)
+    # Show 18 movies per page
+    paginator = Paginator(all_user_collections, 3)
+
+    page = request.GET.get('page')
+
+    try:
+        user_collections = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        user_collections = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        user_collections = paginator.page(paginator.num_pages)
+
     template = loader.get_template('movies/user_collections.html')
+
     context = {
         'user_collections': user_collections,
     }

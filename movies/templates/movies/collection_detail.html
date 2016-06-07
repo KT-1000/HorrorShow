@@ -1,22 +1,30 @@
 {% extends 'movies/base.html' %}
 {% block content %}
     <div class="row">
-        <h3>{{ collection.title }}</h3>
-        <h5>created by {{ collection.user }}</h5>
-        <p>{{ collection.decription }}</p>
-        {% for movie in collection.movies.all %}
+        <div class="col-lg-12">
+            <h1 class="page-header">{{ collection.title }}</h1>
+            <h5>created by {{ collection.user }}</h5>
+        </div>
+    </div><!-- /.row -->
+
+    {% for movie in collection.movies.all %}
+        {% if forloop.counter|divisibleby:6 or forloop.counter == 0 %}
+            <div class="row">
+        {% endif %}
             <div class="col-md-2">
-            <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                {% if movie.has_poster != False %}
-                <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
-                {% else %}
-                <img class="img-responsive" src="/static/images/horrorshow.jpg">
-                {% endif %}
-            </a>
+                <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                    {% if movie.has_poster %}
+                    <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
+                    {% else %}
+                    <img class="img-responsive" src="/static/images/horrorshow.jpg">
+                    {% endif %}
+                </a>
             <h3>
                 <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
             </h3>
             </div>
-        {% endfor %}
-    </div>
+        {% if forloop.counter|divisibleby:6 %}
+            </div><!-- .row -->
+        {% endif %}
+    {% endfor %}
 {% endblock %}

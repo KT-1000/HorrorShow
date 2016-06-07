@@ -2,14 +2,34 @@
 {% load custom_class_name %}
 
 {% block content %}
-    <h3>Search results for {{ search_str }}</h3>
+    <!-- Page Heading -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Search results for {{ search_str }}</h1>
+        </div>
+    </div><!-- /.row -->
     <div>
-        {% for result in search_results %}
-        {% if result.object|class_name == 'Movie' %}
-            <div>Movie: <a href="{% url 'movie_detail' imdb_id=result.object.imdb_id %}">{{ result.object.title }}</a></div>
-        {% elif result.object|class_name == 'Collection' %}
-            <div>Collection: <a href="{% url 'collection_detail' collection_id=result.object.id %}">{{ result.object.title }}</a></div>
-        {% endif %}
+        {% for result in results %}
+            {% if result.object|class_name == 'Movie' %}
+                <div>Movie: <a href="{% url 'movie_detail' imdb_id=result.object.imdb_id %}">{{ result.object.title }}</a></div>
+            {% elif result.object|class_name == 'Collection' %}
+                <div>Collection: <a href="{% url 'collection_detail' collection_id=result.object.id %}">{{ result.object.title }}</a></div>
+            {% endif %}
         {% endfor %}
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if results.has_previous %}
+                <a href="?page={{ results.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ results.number }} of {{ results.paginator.num_pages }}.
+            </span>
+
+            {% if results.has_next %}
+                <a href="?page={{ results.next_page_number }}">next</a>
+            {% endif %}
+        </span>
     </div>
 {% endblock %}
