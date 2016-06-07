@@ -6,5 +6,18 @@
 20160529 ~ Collection creation ability
 20160529 ~ Dashboard with user's collections and movies
 20160603 ~ Pagination for movies and collections and search results
-Populate db with ALL horror movies on IMDb
+
 Tests
+Make navbar look way, way better
+Fix index template
+
+Grey instead of blue font colors for titles and links, deep red on mouseover
+Nuke underline on link selection
+Adjust sizing of movie titles to make movies view more appealing
+Indicate selection of movie poster on mouseover
+
+Background transparent overlook or room 237 pattern?
+Consistently size images?
+About page?
+_______________________________________________
+Populate db with ALL horror movies on IMDb
