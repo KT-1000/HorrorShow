@@ -5,6 +5,6 @@
 20160529 ~ Login "authentication"
 20160529 ~ Collection creation ability
 20160529 ~ Dashboard with user's collections and movies
-Pagination for movies and collections and search results
+20160603 ~ Pagination for movies and collections and search results
 Populate db with ALL horror movies on IMDb
 Tests

@@ -5,6 +5,7 @@ from .models import Collection, Movie
 
 class CollectionAdmin(admin.ModelAdmin):
     search_fields = ['title']
+    filter_horizontal = ('movies',)
 
 
 class MovieAdmin(admin.ModelAdmin):
