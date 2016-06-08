@@ -84,5 +84,4 @@ ENV/
 
 # User-specific stuff:
 .idea/
-*.jpg
-*.png
+/movies/static/posters
