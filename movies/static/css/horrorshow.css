@@ -1,3 +1,11 @@
+.card-img-top {
+    height: 200px;
+}
+
+.card-block{
+    height: 250px;
+}
+
 .navbar-default {
     background-image: none;
     background-color: #000000; !important

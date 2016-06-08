@@ -7,20 +7,27 @@
         </div>
     </div><!-- /.row -->
     {% for movie in movies %}
-        {% if forloop.counter|divisibleby:6 or forloop.counter == 0 %}
+        {% if forloop.counter == 0 or forloop.counter|divisibleby:6 %}
             <div class="row">
         {% endif %}
             <div class="col-md-2 col-sm-4 col-xs 12">
-                <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
-                    {% if movie.has_poster %}
-                        <img class="img-responsive" src="/static/posters/{{ movie.poster_name }}">
-                    {% else %}
-                        <img class="img-responsive" src="/static/images/horrorshow.jpg">
-                    {% endif %}
-                </a>
-                <h3><a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}">{{ movie.title }}</a></h3>
+                <div class="card">
+                    <div class="card-block">
+                         <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">
+                            {% if movie.has_poster %}
+                                <img class="card-img-top" src="/static/posters/{{ movie.poster_name }}">
+                            {% else %}
+                                <img class="card-img-top" src="/static/images/horrorshow.jpg">
+                            {% endif %}
+                         </a>
+                        <h5 class="card-title">
+                            <a href="{% url 'movie_detail' imdb_id=movie.imdb_id %}" target="_blank">{{ movie.title }}</a>
+                        </h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
             </div>
-        {% if forloop.counter|divisibleby:6 %}
+        {% if forloop.counter == 0 or forloop.counter|divisibleby:6 %}
             </div><!-- .row -->
         {% endif %}
     {% endfor %}
