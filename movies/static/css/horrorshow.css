@@ -65,8 +65,6 @@
     }
 }
 
-.movie {
-    height: 180px;
-    overflow: hidden;
-    display: inline-block;
+#logo_img {
+    height: 65px;
 }
