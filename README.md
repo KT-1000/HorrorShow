@@ -9,7 +9,7 @@ HorrorShow is a web application created by Katie Simmons. Horror movie fans can 
 - [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [OMDb API](http://www.omdbapi.com/)
 - [Guidebox API](https://api.guidebox.com/)
-= [Watson](https://github.com/etianen/django-watson)
+- [Watson](https://github.com/etianen/django-watson)
 - [Bootstrap](http://getbootstrap.com/)
 
 ## <a name="features"></a>Features
@@ -25,9 +25,7 @@ HorrorShow is a web application created by Katie Simmons. Horror movie fans can 
 - [ ] Users can share collections.
 - [ ] Movies and collections are suggested based on user ratings.
 
-## <a name="searchfunction"></a>Search Function
-
-## <a name="data"></a>Data
+## <a name="Data"></a>Data
 
 The ETL process was the primary challenge and very core of this project. Since my initial chosen library to obtain movie information relied on a deprecated dependency that prevented it from being used successfully on any of the OSes or Python versions I tried, it was necessary to seek data from diverse sources. Initially, this meant using BeautifulSoup4 to scrape IMDb for horror movie IDs that could be used in other APIs. With IMDB IDs, I could format OMDb and Guidebox URLs to GET JSON. For each model corresponding to a database table, the fields came from IMDb, OMDb and Guidebox. Since Guidebox provided posters, trailers, streaming sources, and other data, I determined that it would be most effective to leverage PostgreSQL's JSON field and store the Guidebox data in its JSON format.
 
